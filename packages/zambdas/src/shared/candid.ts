@@ -63,6 +63,7 @@ import {
   FHIR_IDENTIFIER_NPI,
   getAttendingPractitionerId,
   getCandidPlanTypeCodeFromCoverage,
+  getCoding,
   getCptCodeFromMedication,
   getDosageFromMA,
   getHcpcsCodeFromMedication,
@@ -83,6 +84,7 @@ import {
   PaymentVariant,
   Secrets,
   SecretsKeys,
+  SERVICE_CATEGORY_SYSTEM,
   TIMEZONES,
 } from 'utils';
 import { CODE_SYSTEM_CMS_PLACE_OF_SERVICE, emCodeOptions } from 'utils/lib/helpers/rcm';
@@ -242,6 +244,8 @@ const createCandidCreateEncounterInput = async (
   const medications = await getMedicationAdministrationsForEncounter(oystehr, encounter.id, {
     statuses: ['administered', 'administered-partly'],
   });
+
+  const serviceCategory = getCoding(appointment?.serviceCategory, SERVICE_CATEGORY_SYSTEM)?.code;
 
   return {
     appointment: appointment,

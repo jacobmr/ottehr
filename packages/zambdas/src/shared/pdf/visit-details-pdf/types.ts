@@ -20,7 +20,7 @@ export interface FullAppointmentResourcePackage {
   timezone: string;
   chargeItem?: ChargeItem;
   patient?: Patient;
-  account?: Account;
+  accounts?: Account[];
   location?: Location;
   questionnaireResponse?: QuestionnaireResponse;
   practitioners?: Practitioner[];

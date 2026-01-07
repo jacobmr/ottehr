@@ -208,9 +208,9 @@ export const getAppointmentAndRelatedResources = async (
     return item.resourceType === 'Patient';
   }) as Patient;
 
-  const account: Account | undefined = items.find((item: Resource) => {
+  const accounts: Account[] | undefined = items.filter((item: Resource) => {
     return item.resourceType === 'Account';
-  }) as Account;
+  }) as Account[];
 
   const location: Location | undefined = items.find((item: Resource) => {
     return item.resourceType === 'Location';
@@ -246,7 +246,7 @@ export const getAppointmentAndRelatedResources = async (
     mainEncounter,
     chargeItem,
     patient,
-    account,
+    accounts,
     location,
     questionnaireResponse,
     practitioners,
