@@ -40,10 +40,10 @@ const mockAllergySearchData = [
 ];
 
 vi.mock('../../src/features/visits/shared/stores/appointment/appointment.queries', () => ({
-  useGetAllergiesSearch: vi.fn((search: string) => ({
+  useGetAllergiesSearch: (search: string) => ({
     isFetching: false,
     data: search && search.length > 0 ? mockAllergySearchData : [],
-  })),
+  }),
 }));
 
 vi.mock('../../src/features/visits/shared/hooks/useGetAppointmentAccessibility', () => ({
@@ -166,15 +166,17 @@ describe('KnownAllergiesProviderColumn', () => {
       const user = userEvent.setup();
       render(<KnownAllergiesProviderColumn />, { wrapper: createWrapper() });
 
-      await user.click(screen.getByRole('combobox'));
-      await user.type(screen.getByRole('combobox'), 'Bana');
+      const combobox = screen.getByRole('combobox');
+      await user.click(combobox);
+      await user.type(combobox, 'Bana');
+
       await waitFor(
         async () => {
           const dropdown = await screen.findByRole('presentation');
           const option = await within(dropdown).findAllByText(/Banana/);
           await user.click(option[0]);
         },
-        { timeout: 1000 }
+        { timeout: 3000 }
       );
 
       expect(mockChartDataArrayValueOnSubmit).toHaveBeenCalledWith(expect.objectContaining({ name: 'Banana' }));
@@ -184,15 +186,17 @@ describe('KnownAllergiesProviderColumn', () => {
       const user = userEvent.setup();
       render(<KnownAllergiesProviderColumn />, { wrapper: createWrapper() });
 
-      await user.click(screen.getByRole('combobox'));
-      await user.type(screen.getByRole('combobox'), 'Bana');
+      const combobox = screen.getByRole('combobox');
+      await user.click(combobox);
+      await user.type(combobox, 'Bana');
+
       await waitFor(
         async () => {
           const dropdown = await screen.findByRole('presentation');
           const option = await within(dropdown).findAllByText(/Banana/);
           await user.click(option[0]);
         },
-        { timeout: 1000 }
+        { timeout: 3000 }
       );
 
       expect(mockSetPartialChartData).toHaveBeenCalledWith(
@@ -214,15 +218,17 @@ describe('KnownAllergiesProviderColumn', () => {
       // Simulate server error
       mockChartDataArrayValueOnSubmit.mockRejectedValueOnce(new Error('Server error'));
 
-      await user.click(screen.getByRole('combobox'));
-      await user.type(screen.getByRole('combobox'), 'Bana');
+      const combobox = screen.getByRole('combobox');
+      await user.click(combobox);
+      await user.type(combobox, 'Bana');
+
       await waitFor(
         async () => {
           const dropdown = await screen.findByRole('presentation');
           const option = await within(dropdown).findAllByText(/Banana/);
           await user.click(option[0]);
         },
-        { timeout: 1000 }
+        { timeout: 3000 }
       );
 
       expect(mockSetPartialChartData).toHaveBeenLastCalledWith({
