@@ -1,0 +1,126 @@
+# BMM Workflow Status
+# Tracks progress through BMad Method Analysis, Planning, and Solutioning phases
+# Implementation phase tracked separately in sprint-status.yaml
+
+generated: "2026-01-08"
+project: "ottehr"
+project_type: "EHR Platform Enhancement"
+selected_track: "bmad-method"
+field_type: "brownfield"
+workflow_path: "method-brownfield.yaml"
+
+# Brownfield Research Context
+brownfield_research:
+  dynamicscribe_analysis: "docs/dynamicscribe-ux-analysis.md"
+  project_documentation: "docs/"
+  goal: "Instantiate DynamicScribe UX vision onto Ottehr EHR codebase"
+
+workflow_status:
+  # Phase 0: Documentation (Prerequisite)
+  - phase: 0
+    name: "Documentation"
+    status: "complete"
+    workflows:
+      - id: "document-project"
+        status: "docs/"
+        completed_date: "2026-01-08"
+        agent: "analyst"
+        command: "/bmad:bmm:workflows:document-project"
+        outputs:
+          - "docs/index.md"
+          - "docs/architecture.md"
+          - "docs/development-guide.md"
+          - "docs/api-contracts.md"
+          - "docs/source-tree-analysis.md"
+          - "docs/dynamicscribe-ux-analysis.md"
+
+  # Phase 1: Analysis (Optional)
+  - phase: 1
+    name: "Analysis"
+    status: "optional"
+    workflows:
+      - id: "brainstorm-project"
+        status: "optional"
+        agent: "analyst"
+        command: "/bmad:core:workflows:brainstorming"
+        note: "Creative exploration - available if needed"
+      - id: "research"
+        status: "partial"
+        agent: "analyst"
+        command: "/bmad:bmm:workflows:research"
+        note: "DynamicScribe UX analysis completed as brownfield research"
+      - id: "product-brief"
+        status: "optional"
+        agent: "analyst"
+        command: "/bmad:bmm:workflows:create-product-brief"
+        note: "Recommended for greenfield, optional for brownfield"
+
+  # Phase 2: Planning (Required)
+  - phase: 2
+    name: "Planning"
+    status: "complete"
+    workflows:
+      - id: "prd"
+        status: "complete"
+        completed_date: "2026-01-08"
+        agent: "pm"
+        command: "/bmad:bmm:workflows:create-prd"
+        output: "planning/prd.md"
+        note: "Aura PRD complete - 90 FRs, 49 NFRs, 6 user journeys"
+      - id: "create-ux-design"
+        status: "complete"
+        completed_date: "2026-01-08"
+        agent: "ux-designer"
+        command: "/bmad:bmm:workflows:create-ux-design"
+        output: "_bmad-output/planning-artifacts/ux-design-specification.md"
+        note: "Aura UX complete - 14 steps, 2400+ lines, component specs, accessibility"
+
+  # Phase 3: Solutioning (Required)
+  - phase: 3
+    name: "Solutioning"
+    status: "pending"
+    workflows:
+      - id: "create-architecture"
+        status: "required"
+        agent: "architect"
+        command: "/bmad:bmm:workflows:create-architecture"
+        output: "System architecture document"
+        note: "Design FHIR integration and zambda endpoints for scribe features"
+      - id: "create-epics-and-stories"
+        status: "required"
+        agent: "pm"
+        command: "/bmad:bmm:workflows:create-epics-and-stories"
+        note: "Break down into implementable stories"
+      - id: "test-design"
+        status: "optional"
+        agent: "tea"
+        command: "/bmad:bmm:workflows:testarch-test-design"
+        note: "System-level testability review"
+      - id: "implementation-readiness"
+        status: "required"
+        agent: "architect"
+        command: "/bmad:bmm:workflows:check-implementation-readiness"
+        note: "Gate check before implementation"
+
+  # Phase 4: Implementation
+  - phase: 4
+    name: "Implementation"
+    status: "pending"
+    workflows:
+      - id: "sprint-planning"
+        status: "required"
+        agent: "sm"
+        command: "/bmad:bmm:workflows:sprint-planning"
+        note: "Creates sprint-status.yaml for implementation tracking"
+
+# Next Action
+next:
+  workflow: "create-architecture"
+  agent: "architect"
+  command: "/bmad:bmm:workflows:create-architecture"
+  context: |
+    PRD Complete: planning/prd.md
+    UX Design Complete: _bmad-output/planning-artifacts/ux-design-specification.md
+    Focus: FHIR integration and zambda endpoints for Aura features
+    Key Components: AI synthesis, Actions routing, Care Plan, Documentation
+    Stack: Ottehr (React 18 + MUI 5 + Oystehr/FHIR R4 + Zambdas)
