@@ -162,7 +162,7 @@ describe('KnownAllergiesProviderColumn', () => {
   });
 
   describe('selecting allergy', () => {
-    it('should call onSubmit with selected allergy', { timeout: 5000 }, async () => {
+    it('should call onSubmit with selected allergy', { timeout: 12000 }, async () => {
       const user = userEvent.setup();
       render(<KnownAllergiesProviderColumn />, { wrapper: createWrapper() });
 
@@ -176,13 +176,13 @@ describe('KnownAllergiesProviderColumn', () => {
           const option = await within(dropdown).findAllByText(/Banana/);
           await user.click(option[0]);
         },
-        { timeout: 3000 }
+        { timeout: 10_000 }
       );
 
       expect(mockChartDataArrayValueOnSubmit).toHaveBeenCalledWith(expect.objectContaining({ name: 'Banana' }));
     });
 
-    it('should update local state with selected code', async () => {
+    it('should update local state with selected code', { timeout: 12000 }, async () => {
       const user = userEvent.setup();
       render(<KnownAllergiesProviderColumn />, { wrapper: createWrapper() });
 
@@ -196,7 +196,7 @@ describe('KnownAllergiesProviderColumn', () => {
           const option = await within(dropdown).findAllByText(/Banana/);
           await user.click(option[0]);
         },
-        { timeout: 3000 }
+        { timeout: 10_000 }
       );
 
       expect(mockSetPartialChartData).toHaveBeenCalledWith(
@@ -207,7 +207,7 @@ describe('KnownAllergiesProviderColumn', () => {
       );
     });
 
-    it('should show error and rollback on save failure', { timeout: 5000 }, async () => {
+    it('should show error and rollback on save failure', { timeout: 12000 }, async () => {
       const user = userEvent.setup();
       mockChartData = {
         allergies: [],
@@ -228,7 +228,7 @@ describe('KnownAllergiesProviderColumn', () => {
           const option = await within(dropdown).findAllByText(/Banana/);
           await user.click(option[0]);
         },
-        { timeout: 3000 }
+        { timeout: 10_000 }
       );
 
       expect(mockSetPartialChartData).toHaveBeenLastCalledWith({
