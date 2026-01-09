@@ -12,7 +12,8 @@
     "baseUrl": ".",
     "paths": {
       "@ehrTheme/*": ["src/themes/ottehr/*"],
-      "@ehrDefaultTheme/*": ["src/themes/ottehr/*"]
+      "@ehrDefaultTheme/*": ["src/themes/ottehr/*"],
+      "@aura/*": ["src/features/aura/*"]
     }
   },
   "include": [".", ".eslintrc.cjs"]

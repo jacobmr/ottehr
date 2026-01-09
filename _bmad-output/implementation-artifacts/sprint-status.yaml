@@ -1,0 +1,201 @@
+# generated: 2026-01-09
+# project: ottehr
+# project_key: aura
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - SM typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: 2026-01-09
+project: ottehr
+project_key: aura
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  # Epic 1: Foundation & Project Setup
+  epic-1: in-progress
+  1-1-create-aura-directory-structure: done
+  1-2-configure-aura-theme-extensions: backlog
+  1-3-register-fhir-extensions: backlog
+  1-4-create-ai-client-infrastructure: backlog
+  1-5-create-ai-audit-logger: backlog
+  1-6-create-zustand-store-scaffolds: backlog
+  1-7-implement-feature-flag: backlog
+  epic-1-retrospective: optional
+
+  # Epic 2: Pre-Visit Patient Input & Care Context
+  epic-2: backlog
+  2-1-create-patient-pre-visit-input-endpoint: backlog
+  2-2-create-pre-visit-synthesis-zambda: backlog
+  2-3-create-synthesis-card-component: backlog
+  2-4-create-patient-context-bar-component: backlog
+  2-5-display-patient-priorities-prominently: backlog
+  2-6-implement-ai-thinking-indicator: backlog
+  epic-2-retrospective: optional
+
+  # Epic 3: Actions Panel & Clinician Approval
+  epic-3: backlog
+  3-1-create-action-generation-zambda: backlog
+  3-2-create-action-card-component: backlog
+  3-3-create-routing-chip-component: backlog
+  3-4-create-status-chip-component: backlog
+  3-5-create-actions-panel-component: backlog
+  3-6-create-approve-all-button-component: backlog
+  3-7-implement-individual-action-approval: backlog
+  3-8-implement-action-modification: backlog
+  3-9-implement-action-rejection: backlog
+  3-10-implement-batch-approval-zambda: backlog
+  3-11-implement-undo-for-batch-approval: backlog
+  3-12-display-ai-reasoning-transparency: backlog
+  3-13-implement-action-audit-trail: backlog
+  epic-3-retrospective: optional
+
+  # Epic 4: Clinical Documentation Generation
+  epic-4: backlog
+  4-1-create-documentation-generation-zambda: backlog
+  4-2-create-documentation-review-component: backlog
+  4-3-implement-inline-note-editing: backlog
+  4-4-implement-note-finalization: backlog
+  4-5-create-encounter-input-capture-typed: backlog
+  epic-4-retrospective: optional
+
+  # Epic 5: Care Plan Management
+  epic-5: backlog
+  5-1-create-care-plan-retrieval-zambda: backlog
+  5-2-create-care-plan-card-component: backlog
+  5-3-create-care-plan-update-zambda: backlog
+  5-4-display-hedis-quality-gaps: backlog
+  5-5-implement-real-time-care-plan-sync: backlog
+  5-6-implement-gap-closure-tracking: backlog
+  epic-5-retrospective: optional
+
+  # Epic 6: Decision Aids & Shared Decision-Making
+  epic-6: backlog
+  6-1-create-decision-aid-generation-zambda: backlog
+  6-2-create-decision-aid-component: backlog
+  6-3-implement-shared-view-mode: backlog
+  6-4-display-ai-suggestion-transparency: backlog
+  6-5-implement-decision-capture: backlog
+  epic-6-retrospective: optional
+
+  # Epic 7: MA Workflow & Action Queues
+  epic-7: backlog
+  7-1-create-action-queue-retrieval-zambda: backlog
+  7-2-create-action-queue-component: backlog
+  7-3-display-pre-visit-prep-instructions: backlog
+  7-4-implement-standing-order-execution: backlog
+  7-5-implement-post-visit-task-completion: backlog
+  7-6-implement-patient-education-documentation: backlog
+  epic-7-retrospective: optional
+
+  # Epic 8: Orders, Prescriptions & Referrals
+  epic-8: backlog
+  8-1-integrate-erx-for-prescriptions: backlog
+  8-2-implement-lab-order-transmission: backlog
+  8-3-create-referral-with-clinical-context: backlog
+  8-4-implement-drug-interaction-check: backlog
+  8-5-implement-pharmacy-selection: backlog
+  epic-8-retrospective: optional
+
+  # Epic 9: Patient Portal & Post-Visit Access
+  epic-9: backlog
+  9-1-create-patient-visit-summary-view: backlog
+  9-2-create-patient-care-plan-view: backlog
+  9-3-display-patient-action-items: backlog
+  9-4-integrate-with-patient-portal-intake-app: backlog
+  epic-9-retrospective: optional
+
+  # Epic 10: Caregiver Access & Notifications
+  epic-10: backlog
+  10-1-implement-caregiver-authorization: backlog
+  10-2-implement-caregiver-access-revocation: backlog
+  10-3-create-caregiver-dashboard: backlog
+  10-4-send-visit-summaries-to-caregivers: backlog
+  10-5-display-caregiver-action-items: backlog
+  10-6-implement-caregiver-messaging: backlog
+  epic-10-retrospective: optional
+
+  # Epic 11: Care Manager Panel & Outreach
+  epic-11: backlog
+  11-1-create-priority-dashboard-view: backlog
+  11-2-display-clinical-trigger-flags: backlog
+  11-3-generate-ai-outreach-suggestions: backlog
+  11-4-implement-multi-channel-outreach: backlog
+  11-5-document-outreach-outcomes: backlog
+  11-6-implement-provider-escalation: backlog
+  11-7-update-care-plans-from-outreach: backlog
+  11-8-close-care-gaps-via-outreach: backlog
+  epic-11-retrospective: optional
+
+  # Epic 12: Patient Messaging & Async Engagement
+  epic-12: backlog
+  12-1-create-patient-messaging-interface: backlog
+  12-2-implement-ai-information-gathering: backlog
+  12-3-route-symptoms-to-licensed-professionals: backlog
+  12-4-implement-cds-compliant-response-templates: backlog
+  12-5-implement-follow-up-automation: backlog
+  epic-12-retrospective: optional
+
+  # Epic 13: Real-Time Transcript
+  epic-13: backlog
+  13-1-integrate-voice-transcription-service: backlog
+  13-2-create-transcript-display-component: backlog
+  13-3-link-transcript-to-documentation: backlog
+  epic-13-retrospective: optional
+
+  # Epic 14: Notifications & Communication Preferences
+  epic-14: backlog
+  14-1-send-action-assignment-notifications: backlog
+  14-2-send-appointment-reminders: backlog
+  14-3-configure-notification-preferences: backlog
+  14-4-implement-multi-channel-delivery: backlog
+  epic-14-retrospective: optional
+
+  # Epic 15: Administration & Access Management
+  epic-15: backlog
+  15-1-create-user-management-interface: backlog
+  15-2-implement-role-assignment: backlog
+  15-3-configure-practice-settings: backlog
+  15-4-implement-rbac-enforcement: backlog
+  15-5-implement-data-isolation: backlog
+  15-6-support-multi-provider-practices: backlog
+  epic-15-retrospective: optional
+
+  # Epic 16: Compliance, Audit & Security
+  epic-16: backlog
+  16-1-implement-phi-access-logging: backlog
+  16-2-implement-ai-suggestion-audit-trail: backlog
+  16-3-implement-encryption-at-rest: backlog
+  16-4-implement-encryption-in-transit: backlog
+  16-5-implement-minimum-necessary-access: backlog
+  16-6-implement-session-security: backlog
+  16-7-implement-breach-notification-preparation: backlog
+  epic-16-retrospective: optional
