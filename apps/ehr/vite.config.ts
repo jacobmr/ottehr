@@ -25,7 +25,7 @@ export default ({ mode }: { mode: string }): UserConfig => {
         org: env.SENTRY_ORG,
         project: env.SENTRY_PROJECT,
         sourcemaps: {
-          assets: ['./build/**/*'],
+          assets: ['./dist/**/*'],
         },
       })
     );
@@ -57,7 +57,7 @@ export default ({ mode }: { mode: string }): UserConfig => {
           : undefined,
     },
     build: {
-      outDir: './build',
+      outDir: './dist',
       target: browserslistToEsbuild(),
       sourcemap: true,
     },
