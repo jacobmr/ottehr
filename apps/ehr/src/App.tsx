@@ -13,7 +13,9 @@ import { LoadingScreen } from './components/LoadingScreen';
 import Navbar from './components/navigation/Navbar';
 import { ProtectedRoute } from './components/routing/ProtectedRoute';
 import { TestErrorPage } from './components/TestErrorPage';
+import { FEATURE_FLAGS } from './constants/feature-flags';
 import { CustomThemeProvider } from './CustomThemeProvider';
+import { AuraDemo } from './features/aura/demo';
 import { UnsolicitedResultsInbox } from './features/external-labs/pages/UnsolicitedResultsInbox';
 import { UnsolicitedResultsMatch } from './features/external-labs/pages/UnsolicitedResultsMatch';
 import { UnsolicitedResultsReview } from './features/external-labs/pages/UnsolicitedResultsReview';
@@ -290,6 +292,7 @@ function App(): ReactElement {
               )}
             </Route>
             <Route path="/test-error" element={<TestErrorPage />} />
+            {FEATURE_FLAGS.AURA_ENABLED && <Route path="/aura-demo" element={<AuraDemo />} />}
           </Routes>
           <SnackbarProvider maxSnack={5} autoHideDuration={6000} />
         </BrowserRouter>

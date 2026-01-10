@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd ../.. && npm install && npm run ehr:build",
+  "outputDirectory": "build",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

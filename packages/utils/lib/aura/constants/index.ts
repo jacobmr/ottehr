@@ -4,9 +4,18 @@
  * Export all shared Aura constants from this barrel file.
  */
 
-// Constants will be exported as they are created
-// export { ROUTING_ACTORS, ACTION_TYPES } from './routing-actors';
-// export { AURA_STATUS_VALUES, AURA_SOURCE_VALUES } from './extension-values';
-
-// Empty export to make this a valid ES module
-export {};
+// Extension value arrays and type guards
+export {
+  AURA_STATUS_VALUES,
+  AURA_SOURCE_VALUES,
+  AURA_ROUTING_ACTOR_VALUES,
+  AURA_ACTION_TYPE_VALUES,
+  AURA_APPROVAL_STATUS_VALUES,
+  AURA_AI_CONFIDENCE_VALUES,
+  isAuraStatus,
+  isAuraSource,
+  isAuraRoutingActor,
+  isAuraActionType,
+  isAuraApprovalStatus,
+  isAuraAiConfidence,
+} from './extension-values';

@@ -1,9 +1,12 @@
 import { aiIcon } from '@ehrTheme/icons';
 import AssignmentIndOutlinedIcon from '@mui/icons-material/AssignmentIndOutlined';
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import { TabContext, TabList } from '@mui/lab';
 import { Box, ListItemIcon, Tab, Typography } from '@mui/material';
 import React, { FC } from 'react';
 import { dataTestIds } from 'src/constants/data-test-ids';
+import { FEATURE_FLAGS } from 'src/constants/feature-flags';
+import { auraPalette } from 'src/features/aura/theme/palette';
 import { sidebarMenuIcons } from 'src/features/visits/shared/components/Sidebar';
 import { useAppTelemedLocalStore, useChartData } from 'src/features/visits/shared/stores/appointment/appointment.store';
 import { TelemedAppointmentVisitTabs } from 'utils';
@@ -96,6 +99,21 @@ export const AppointmentTabsHeader: FC = () => {
             value={TelemedAppointmentVisitTabs.ottehrai}
           />
         ) : undefined}
+        {FEATURE_FLAGS.AURA_ENABLED && (
+          <Tab
+            label={
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75 }}>
+                <AutoAwesomeIcon sx={{ color: auraPalette.aiAccent, fontSize: 24 }} />
+                <Typography
+                  sx={{ textTransform: 'none', fontWeight: 700, fontSize: '14px', color: auraPalette.primary }}
+                >
+                  Aura
+                </Typography>
+              </Box>
+            }
+            value={TelemedAppointmentVisitTabs.aura}
+          />
+        )}
       </TabList>
     </TabContext>
   );

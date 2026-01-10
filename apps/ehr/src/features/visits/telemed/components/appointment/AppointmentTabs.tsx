@@ -1,5 +1,7 @@
 import { TabContext, TabPanel } from '@mui/lab';
 import { FC } from 'react';
+import { FEATURE_FLAGS } from 'src/constants/feature-flags';
+import { AuraTab } from 'src/features/aura/components';
 import { InPersonNavigationProvider } from 'src/features/visits/in-person/context/InPersonNavigationContext';
 import { AssessmentTab } from 'src/features/visits/shared/components/assessment-tab/AssessmentTab';
 import { ExamTab } from 'src/features/visits/shared/components/exam-tab/ExamTab';
@@ -53,6 +55,11 @@ export const AppointmentTabs: FC = () => {
             <OttehrAi />
           </TabPanel>
         ) : undefined}
+        {FEATURE_FLAGS.AURA_ENABLED && (
+          <TabPanel value={TelemedAppointmentVisitTabs.aura} sx={{ p: 0 }}>
+            <AuraTab />
+          </TabPanel>
+        )}
       </TabContext>
     </InPersonNavigationProvider>
   );

@@ -4,9 +4,15 @@
  * Export FHIR extension definitions and helpers from this barrel file.
  */
 
-// FHIR utilities will be exported as they are created
-// export { AURA_EXTENSIONS, getAuraExtension, setAuraExtension } from './extensions';
-// export { mapFhirTaskToAuraAction, mapAuraActionToFhirTask } from './mappers';
-
-// Empty export to make this a valid ES module
-export {};
+// Extension constants and helpers
+export {
+  AURA_EXTENSION_BASE_URL,
+  AURA_EXTENSION,
+  type AuraExtensionDefinition,
+  getAuraExtension,
+  setAuraExtension,
+  removeAuraExtension,
+  hasAuraExtension,
+  withAuraExtension,
+  createAuraExtension,
+} from './extensions';

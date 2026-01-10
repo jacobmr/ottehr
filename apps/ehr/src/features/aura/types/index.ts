@@ -4,10 +4,29 @@
  * Export all Aura type definitions from this barrel file.
  */
 
-// Types will be exported as they are created
-// export type { AuraAction, ActionType, RoutingActor } from './action.types';
-// export type { SynthesisResult, PatientConcern } from './synthesis.types';
-// export type { CarePlanItem, CarePlanStatus } from './care-plan.types';
+// Action types
+export type {
+  AuraAction,
+  ActionPayload,
+  PrescriptionPayload,
+  LabPayload,
+  ReferralPayload,
+  TaskPayload,
+  NotifyPayload,
+  ApprovalState,
+  UndoContext,
+} from './action.types';
 
-// Empty export to make this a valid ES module
-export {};
+// Synthesis types
+export type {
+  PatientConcern,
+  ConcernCategory,
+  KeyMetric,
+  QualityGap,
+  PreVisitSynthesis,
+  SynthesisLoadingState,
+} from './synthesis.types';
+
+// Care plan types
+export type { CarePlanItem, CarePlanCategory, CarePlanGoal, CarePlanFilters } from './care-plan.types';
+export { DEFAULT_CARE_PLAN_FILTERS } from './care-plan.types';

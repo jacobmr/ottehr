@@ -116,6 +116,7 @@ export enum TelemedAppointmentVisitTabs {
   'plan' = 'plan',
   'sign' = 'sign',
   'ottehrai' = 'ottehrai',
+  'aura' = 'aura',
 }
 
 export enum ApptTelemedTab {

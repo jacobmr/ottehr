@@ -21,6 +21,8 @@ export const auraPalette = {
   aiAccentDark: '#6930C3',
   /** Light purple background for AI elements */
   aiBackground: '#F3E5F5',
+  /** Light surface for cards and containers */
+  surfaceVariant: '#F5F5F5',
 } as const;
 
 /**

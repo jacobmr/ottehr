@@ -7,4 +7,10 @@ export const FEATURE_FLAGS = {
   DEMO_VISITS_ENABLED: import.meta.env.VITE_APP_CREATE_DEMO_VISITS_FEATURE_FLAG === 'true',
   GLOBAL_TEMPLATES_ENABLED: import.meta.env.VITE_APP_IS_GLOBAL_TEMPLATES_ENABLED_FEATURE_FLAG === 'true',
   FORMS_ENABLED: import.meta.env.VITE_APP_IS_FORMS_ENABLED_FEATURE_FLAG === 'true',
+  /**
+   * Aura AI Assistant feature flag.
+   * Controls visibility of AI-powered clinical assistance features.
+   * @see https://fhir.ottehr.com/aura
+   */
+  AURA_ENABLED: import.meta.env.VITE_APP_AURA_ENABLED === 'true',
 };

@@ -4,9 +4,16 @@
  * Export all Aura UI components from this barrel file.
  */
 
-// Components will be exported as they are created
-// export { ActionsPanel } from './ActionsPanel';
-// export { SynthesisCard } from './SynthesisCard';
+// Core indicator components
+export { AuraBadge } from './AuraBadge';
+export { AiThinkingIndicator } from './AiThinkingIndicator';
 
-// Empty export to make this a valid ES module
-export {};
+// Synthesis components
+export { SynthesisCard } from './SynthesisCard';
+
+// Tab components
+export { AuraTab } from './AuraTab';
+
+// Placeholder exports for future components:
+// export { ActionsPanel } from './ActionsPanel';
+// export { PatientContextBar } from './PatientContextBar';

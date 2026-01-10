@@ -4,10 +4,14 @@
  * Export all Aura state management stores from this barrel file.
  */
 
-// Stores will be exported as they are created
-// export { useActionsStore } from './actionsStore';
-// export { useSynthesisStore } from './synthesisStore';
-// export { useCarePlanStore } from './carePlanStore';
+// Actions store - AI-generated actions and approval workflow
+export { useActionsStore } from './actions.store';
 
-// Empty export to make this a valid ES module
-export {};
+// Synthesis store - Pre-visit AI synthesis
+export { useSynthesisStore, selectSynthesisLoading, selectPatientConcerns, selectQualityGaps } from './synthesis.store';
+
+// Care plan store - Longitudinal care plan management
+export { useCarePlanStore, selectFilteredCarePlanItems, selectItemsNeedingReview } from './care-plan.store';
+
+// Shared view store - Clinician-patient shared screen mode
+export { useSharedViewStore, selectUsePatientLanguage, selectShowSharedBadge } from './shared-view.store';
