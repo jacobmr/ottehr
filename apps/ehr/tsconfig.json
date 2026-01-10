@@ -16,5 +16,6 @@
       "@aura/*": ["src/features/aura/*"]
     }
   },
-  "include": [".", ".eslintrc.cjs"]
+  "include": [".", ".eslintrc.cjs"],
+  "exclude": ["**/*.test.ts", "**/*.test.tsx", "tests/**", "node_modules"]
 }
