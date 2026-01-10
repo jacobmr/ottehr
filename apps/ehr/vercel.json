@@ -1,7 +1,7 @@
 {
   "installCommand": "cd ../.. && npm install --legacy-peer-deps",
   "buildCommand": "cd ../.. && npm run ehr:build",
-  "outputDirectory": "dist",
+  "outputDirectory": "build",
   "framework": "vite",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
