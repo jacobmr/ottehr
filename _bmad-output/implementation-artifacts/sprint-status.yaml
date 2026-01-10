@@ -43,7 +43,7 @@ development_status:
   # Epic 1: Foundation & Project Setup
   epic-1: in-progress
   1-1-create-aura-directory-structure: done
-  1-2-configure-aura-theme-extensions: backlog
+  1-2-configure-aura-theme-extensions: done
   1-3-register-fhir-extensions: backlog
   1-4-create-ai-client-infrastructure: backlog
   1-5-create-ai-audit-logger: backlog

@@ -65,6 +65,7 @@ export default ({ mode }: { mode: string }): UserConfig => {
       alias: {
         '@ehrTheme': path.resolve(__dirname, env.THEME_PATH || 'src/themes/ottehr'),
         '@ehrDefaultTheme': path.resolve(__dirname, 'src/themes/ottehr'),
+        '@aura': path.resolve(__dirname, 'src/features/aura'),
       },
     },
   });
