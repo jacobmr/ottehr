@@ -41,18 +41,19 @@ story_location: _bmad-output/implementation-artifacts
 
 development_status:
   # Epic 1: Foundation & Project Setup
-  epic-1: in-progress
+  epic-1: done
   1-1-create-aura-directory-structure: done
   1-2-configure-aura-theme-extensions: done
-  1-3-register-fhir-extensions: backlog
-  1-4-create-ai-client-infrastructure: backlog
-  1-5-create-ai-audit-logger: backlog
-  1-6-create-zustand-store-scaffolds: backlog
-  1-7-implement-feature-flag: backlog
+  1-3-register-fhir-extensions: done
+  1-4-create-ai-client-infrastructure: done
+  1-5-create-ai-audit-logger: done
+  1-6-create-zustand-store-scaffolds: done
+  1-7-implement-feature-flag: done
   epic-1-retrospective: optional
 
   # Epic 2: Pre-Visit Patient Input & Care Context
-  epic-2: backlog
+  epic-2: in-progress
+  2-poc-visible-components: done
   2-1-create-patient-pre-visit-input-endpoint: backlog
   2-2-create-pre-visit-synthesis-zambda: backlog
   2-3-create-synthesis-card-component: backlog

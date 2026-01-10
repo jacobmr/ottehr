@@ -29,6 +29,7 @@ So that all Aura components have consistent styling following the UX design spec
 ## Tasks / Subtasks
 
 - [x] Task 1: Create Aura palette configuration (AC: #1, #2, #3)
+
   - [x] Create `apps/ehr/src/features/aura/theme/palette.ts`
   - [x] Define `auraPalette` with primary colors (#0D7377, #14A3A8, #0A5C5E)
   - [x] Define `aiAccent` colors (#7C4DFF, #F3E5F5)
@@ -37,6 +38,7 @@ So that all Aura components have consistent styling following the UX design spec
   - [x] Export typed palette object
 
 - [x] Task 2: Create Aura spacing and sizing configuration (AC: #1)
+
   - [x] Create `apps/ehr/src/features/aura/theme/spacing.ts`
   - [x] Define 8px grid spacing constants
   - [x] Define 44px minimum touch target constant
@@ -44,25 +46,30 @@ So that all Aura components have consistent styling following the UX design spec
   - [x] Export spacing object
 
 - [x] Task 3: Create Aura typography configuration (AC: #1)
+
   - [x] Create `apps/ehr/src/features/aura/theme/typography.ts`
   - [x] Define typography variants for Aura components
   - [x] Export typography object
 
 - [x] Task 4: Create Aura component overrides (AC: #1)
+
   - [x] Create `apps/ehr/src/features/aura/theme/components.ts`
   - [x] Define MUI component style overrides for Aura context
   - [x] Export components object
 
 - [x] Task 5: Create theme extension entry point (AC: #1, #2, #3)
+
   - [x] Update `apps/ehr/src/features/aura/theme/index.ts`
   - [x] Export all theme tokens from barrel file
   - [x] Create `createAuraTheme` helper function (optional - skipped, not needed yet)
 
 - [x] Task 6: Configure Vite path alias (AC: #4)
+
   - [x] Update `apps/ehr/vite.config.ts` to add `@aura` resolve alias
   - [x] Verify alias resolves to `src/features/aura`
 
 - [x] Task 7: Add TypeScript module augmentation (AC: #1, #2, #3)
+
   - [x] Create `apps/ehr/src/features/aura/theme/theme.d.ts`
   - [x] Augment MUI Theme interface with Aura tokens
   - [x] Ensure type safety for custom palette properties

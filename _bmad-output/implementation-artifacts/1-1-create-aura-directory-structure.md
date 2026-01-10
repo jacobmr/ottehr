@@ -13,6 +13,7 @@ So that I have organized locations for all Aura components, zambdas, and utiliti
 1. **Given** the Ottehr monorepo exists
    **When** I run the project setup
    **Then** the following directories are created:
+
    - `apps/ehr/src/features/aura/components/`
    - `apps/ehr/src/features/aura/theme/`
    - `apps/ehr/src/features/aura/stores/`
@@ -32,6 +33,7 @@ So that I have organized locations for all Aura components, zambdas, and utiliti
 ## Tasks / Subtasks
 
 - [x] Task 1: Create frontend feature directories (AC: #1)
+
   - [x] Create `apps/ehr/src/features/aura/` directory
   - [x] Create `apps/ehr/src/features/aura/components/` subdirectory
   - [x] Create `apps/ehr/src/features/aura/theme/` subdirectory
@@ -43,16 +45,19 @@ So that I have organized locations for all Aura components, zambdas, and utiliti
   - [x] Create `apps/ehr/src/features/aura/constants/` subdirectory
 
 - [x] Task 2: Create backend zambda directories (AC: #1)
+
   - [x] Create `packages/zambdas/src/ehr/aura/` directory
   - [x] Create `packages/zambdas/src/ehr/aura/shared/` subdirectory
 
 - [x] Task 3: Create shared utilities directories (AC: #1)
+
   - [x] Create `packages/utils/lib/aura/` directory
   - [x] Create `packages/utils/lib/aura/types/` subdirectory
   - [x] Create `packages/utils/lib/aura/fhir/` subdirectory
   - [x] Create `packages/utils/lib/aura/constants/` subdirectory
 
 - [x] Task 4: Create barrel export files (AC: #2)
+
   - [x] Create `apps/ehr/src/features/aura/index.ts`
   - [x] Create `apps/ehr/src/features/aura/components/index.ts`
   - [x] Create `apps/ehr/src/features/aura/theme/index.ts`
@@ -69,9 +74,11 @@ So that I have organized locations for all Aura components, zambdas, and utiliti
   - [x] Create `packages/utils/lib/aura/constants/index.ts`
 
 - [x] Task 5: Update existing barrel exports (AC: #2)
+
   - [x] Update `apps/ehr/src/features/index.ts` to export from `./aura`
 
 - [x] Task 6: Configure TypeScript paths (AC: #3)
+
   - [x] Add `@aura/*` path mapping to `apps/ehr/tsconfig.json`
 
 - [x] Task 7: Verify structure (AC: #1, #2, #3)

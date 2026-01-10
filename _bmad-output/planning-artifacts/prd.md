@@ -1,7 +1,7 @@
 ---
 stepsCompleted: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 status: complete
-completedDate: "2026-01-08"
+completedDate: '2026-01-08'
 inputDocuments:
   - docs/index.md
   - docs/architecture.md
@@ -45,12 +45,12 @@ Aura treats the **individual as the primary key**, not the encounter. This patie
 
 ### Phasing
 
-| Phase | Components | Timeline |
-|-------|------------|----------|
-| **Phase 1** | Care Plan, Actions, Documentation Generation | 0-6 months |
-| **Phase 2** | Transcript, Agenda | 6-12 months |
-| **Demo** | Demonstrable prototype | ~4 weeks |
-| **Beta** | Production-ready beta | 6-12 months |
+| Phase       | Components                                   | Timeline    |
+| ----------- | -------------------------------------------- | ----------- |
+| **Phase 1** | Care Plan, Actions, Documentation Generation | 0-6 months  |
+| **Phase 2** | Transcript, Agenda                           | 6-12 months |
+| **Demo**    | Demonstrable prototype                       | ~4 weeks    |
+| **Beta**    | Production-ready beta                        | 6-12 months |
 
 ### Scope
 
@@ -61,20 +61,21 @@ Aura treats the **individual as the primary key**, not the encounter. This patie
 
 ## Project Classification
 
-| Attribute | Value |
-|-----------|-------|
-| **Technical Type** | Web Application (SaaS B2B) |
-| **Domain** | Healthcare |
-| **Complexity** | High |
-| **Project Context** | Brownfield - extending Ottehr headless EHR |
+| Attribute                     | Value                                      |
+| ----------------------------- | ------------------------------------------ |
+| **Technical Type**            | Web Application (SaaS B2B)                 |
+| **Domain**                    | Healthcare                                 |
+| **Complexity**                | High                                       |
+| **Project Context**           | Brownfield - extending Ottehr headless EHR |
 | **Regulatory Considerations** | HIPAA, clinical validation, patient safety |
-| **Quality Framework** | HEDIS measures, value-based care alignment |
+| **Quality Framework**         | HEDIS measures, value-based care alignment |
 
 ## Success Criteria
 
 ### User Success
 
 #### Clinician Success
+
 - **Mental alignment**: AI thinks like the clinician - no cognitive translation required
 - **Busywork elimination**: Frees clinicians for "real doctor work" - thinking and listening to patients
 - **Silver-plattered workflow**: Work batched and organized, ready to act with minimal friction
@@ -83,51 +84,53 @@ Aura treats the **individual as the primary key**, not the encounter. This patie
 - **Confidence in care**: Walk away knowing patients received excellent service
 
 #### Patient Success
+
 - **Feeling heard**: Patient priorities explicitly visible and incorporated into care plans
 - **Immediate impact**: First interaction demonstrates the difference
 - **Active partnership**: Patients are participants in their care, not passive recipients
 
 ### Business Success
 
-| Milestone | Success Metric |
-|-----------|----------------|
-| **4 weeks (Demo)** | Full Quadruple-A workflow demonstrated end-to-end: Acquire → Aggregate → Analyze → Act with actions deployed to right actors |
-| **6 months (Early Beta)** | 5-10 physicians actively using Aura, break-even on current compensation model |
-| **12 months (Beta)** | Physicians work less and earn more. Daily "gosh, that's amazing" moments. Enthusiastic disciples who champion the platform. |
-| **Revenue Model** | Dual-track: Value-based care quality capture + Fee-for-service efficiency gains. "Ride both horses." |
+| Milestone                 | Success Metric                                                                                                               |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **4 weeks (Demo)**        | Full Quadruple-A workflow demonstrated end-to-end: Acquire → Aggregate → Analyze → Act with actions deployed to right actors |
+| **6 months (Early Beta)** | 5-10 physicians actively using Aura, break-even on current compensation model                                                |
+| **12 months (Beta)**      | Physicians work less and earn more. Daily "gosh, that's amazing" moments. Enthusiastic disciples who champion the platform.  |
+| **Revenue Model**         | Dual-track: Value-based care quality capture + Fee-for-service efficiency gains. "Ride both horses."                         |
 
 ### Technical Success
 
-| Requirement | Target |
-|-------------|--------|
-| **Data flow** | Seamless integration with Ottehr FHIR backend |
-| **Real-time sync** | All data synchronized in real-time |
-| **Zero redundancy** | System NEVER asks for data it already has |
-| **AI autonomy** | Full autonomy after training, except orders/prescriptions require batched approval |
-| **Approval UX** | Actions batched with sufficient context, single approval for action sets |
-| **Error tolerance** | Zero tolerance for AI errors |
-| **Latency (normal)** | Sub-second response |
-| **Latency (AI thinking)** | 2-5 seconds acceptable with visible thinking indicator |
-| **HIPAA** | Required for all phases |
-| **SOC 2** | Optional for beta |
-| **Audit trails** | Complete logging of every AI decision and action |
+| Requirement               | Target                                                                             |
+| ------------------------- | ---------------------------------------------------------------------------------- |
+| **Data flow**             | Seamless integration with Ottehr FHIR backend                                      |
+| **Real-time sync**        | All data synchronized in real-time                                                 |
+| **Zero redundancy**       | System NEVER asks for data it already has                                          |
+| **AI autonomy**           | Full autonomy after training, except orders/prescriptions require batched approval |
+| **Approval UX**           | Actions batched with sufficient context, single approval for action sets           |
+| **Error tolerance**       | Zero tolerance for AI errors                                                       |
+| **Latency (normal)**      | Sub-second response                                                                |
+| **Latency (AI thinking)** | 2-5 seconds acceptable with visible thinking indicator                             |
+| **HIPAA**                 | Required for all phases                                                            |
+| **SOC 2**                 | Optional for beta                                                                  |
+| **Audit trails**          | Complete logging of every AI decision and action                                   |
 
 ### Measurable Outcomes
 
-| Metric | 6-Month Target | 12-Month Target |
-|--------|----------------|-----------------|
-| Clinician time savings | Break-even with current workflow | Net positive (work less) |
-| Clinician earnings | Break-even with current compensation | Net positive (earn more) |
-| Clinician satisfaction | Willing to continue using | Active champions ("disciples") |
-| Patient engagement | Patients report feeling heard | Patients actively use shared view |
-| AI accuracy | Zero errors reaching patients | Zero errors reaching patients |
-| Action routing accuracy | Actions reach correct actor 95%+ | Actions reach correct actor 99%+ |
+| Metric                  | 6-Month Target                       | 12-Month Target                   |
+| ----------------------- | ------------------------------------ | --------------------------------- |
+| Clinician time savings  | Break-even with current workflow     | Net positive (work less)          |
+| Clinician earnings      | Break-even with current compensation | Net positive (earn more)          |
+| Clinician satisfaction  | Willing to continue using            | Active champions ("disciples")    |
+| Patient engagement      | Patients report feeling heard        | Patients actively use shared view |
+| AI accuracy             | Zero errors reaching patients        | Zero errors reaching patients     |
+| Action routing accuracy | Actions reach correct actor 95%+     | Actions reach correct actor 99%+  |
 
 ## Product Scope
 
 ### MVP - Minimum Viable Product (4 weeks → 6 months)
 
 **Core Components (Phase 1):**
+
 - Care Plan display with patient-centric context
 - Actions Panel with intelligent actor routing (nurse, care manager, patient, caregiver, physician)
 - Documentation generation from clinical encounters
@@ -135,6 +138,7 @@ Aura treats the **individual as the primary key**, not the encounter. This patie
 - Shared clinician + patient view
 
 **Technical Foundation:**
+
 - FHIR-first integration with Ottehr backend
 - Basic LLM integration (Anthropic/OpenAI) with clinical guardrails
 - Real-time data synchronization
@@ -146,16 +150,19 @@ Aura treats the **individual as the primary key**, not the encounter. This patie
 ### Growth Features (6-12 months)
 
 **Phase 2 Components:**
+
 - Real-time Transcript with speaker identification
 - Dynamic Agenda with multi-source tracking (patient, provider, insurance)
 
 **Intelligence Expansion:**
+
 - HEDIS measure integration and quality gap surfacing
 - Initial neuro-symbolic AI components
 - External data assimilation, parsing, and normalization
 - Predictive action suggestions
 
 **Revenue Optimization:**
+
 - Value-based care quality capture automation
 - Fee-for-service efficiency optimization
 
@@ -179,17 +186,18 @@ Her last few doctor visits felt rushed. She'd write down her questions on a note
 
 **The Aura Experience:**
 
-Two days before her appointment, Eleanor receives a text: *"Hi Eleanor, Dr. Chen would like to know what's on your mind for Thursday's visit. What would you like to discuss?"*
+Two days before her appointment, Eleanor receives a text: _"Hi Eleanor, Dr. Chen would like to know what's on your mind for Thursday's visit. What would you like to discuss?"_
 
-She types back: *"The tingling in my legs is getting worse. Also, my Metformin is making me nauseous and I want to talk about it. And I'm worried about my A1C."*
+She types back: _"The tingling in my legs is getting worse. Also, my Metformin is making me nauseous and I want to talk about it. And I'm worried about my A1C."_
 
 When she arrives Thursday, something is different. Dr. Chen greets her and says, "Eleanor, I saw your message about the leg tingling - that's our first priority today. I've also already reviewed your latest A1C - it's actually stable at 6.8%, so I have good news there. Let's talk about what you're experiencing."
 
-For the first time, Eleanor sees her concerns listed on the screen - right next to the doctor's clinical items and even the insurance-required foot exam. *Her priorities are visible. Her words are on the screen.*
+For the first time, Eleanor sees her concerns listed on the screen - right next to the doctor's clinical items and even the insurance-required foot exam. _Her priorities are visible. Her words are on the screen._
 
-As they talk, she watches items get checked off. When she mentions the Metformin nausea, Dr. Chen pulls up a visual showing three alternatives with pros and cons. They decide together to try Jardiance. Eleanor understands *why* - not just *what*.
+As they talk, she watches items get checked off. When she mentions the Metformin nausea, Dr. Chen pulls up a visual showing three alternatives with pros and cons. They decide together to try Jardiance. Eleanor understands _why_ - not just _what_.
 
 At the end, Dr. Chen says, "Let me show you what we accomplished today." The screen displays:
+
 - New prescription: Jardiance (replacing Metformin)
 - Referral: Podiatrist for neuropathy evaluation
 - Lab order: Kidney function check in 2 weeks
@@ -197,7 +205,7 @@ At the end, Dr. Chen says, "Let me show you what we accomplished today." The scr
 
 Eleanor doesn't have to remember any of this. It's already in her phone. Her daughter Maria (her caregiver contact) gets a summary too.
 
-**The transformation:** Eleanor walks out knowing exactly what's happening with her care, feeling like a partner rather than a passenger. She tells her friend at bridge club, "It was like they actually *listened* this time."
+**The transformation:** Eleanor walks out knowing exactly what's happening with her care, feeling like a partner rather than a passenger. She tells her friend at bridge club, "It was like they actually _listened_ this time."
 
 ---
 
@@ -215,28 +223,31 @@ She feels guilty she can't be there, anxious she's missing something important, 
 
 Maria's phone buzzes at 11:47 AM - right when her mom's appointment ends.
 
-*"Eleanor's visit summary is ready. Tap to view."*
+_"Eleanor's visit summary is ready. Tap to view."_
 
 She opens it and sees:
 
 **Today's Visit - Dr. Chen**
+
 - ✅ Discussed leg tingling - referral to podiatrist scheduled
 - ✅ Switched from Metformin to Jardiance (nausea issues)
 - ✅ A1C stable at 6.8% - great news!
 
 **Action Items:**
+
 - 🏥 Podiatrist appointment: Jan 22 at 2pm (Dr. Patel)
 - 💊 New prescription: Jardiance - pick up at Walgreens tomorrow
 - 🩸 Lab work needed in 2 weeks
 - 📱 Mom will message Dr. Chen in 1 week re: how new med is working
 
 **Your role:**
+
 - Remind mom about the lab work (she tends to forget)
 - Watch for signs of low blood sugar with new medication
 
 Maria screenshots it and texts her brother: "Mom's appointment went well - here's what happened." Done in 30 seconds.
 
-Two weeks later, Maria gets a gentle nudge: *"Eleanor's lab work is due this week. Would you like to send her a reminder?"* She taps yes. Her mom gets a text that feels like it came from Maria.
+Two weeks later, Maria gets a gentle nudge: _"Eleanor's lab work is due this week. Would you like to send her a reminder?"_ She taps yes. Her mom gets a text that feels like it came from Maria.
 
 **The transformation:** Maria goes from anxious outsider to informed partner. She's in the loop instantly, knows exactly what she needs to do, and can support her mom without the phone tag. She tells her husband, "I finally feel like I can help without being there."
 
@@ -246,7 +257,7 @@ Two weeks later, Maria gets a gentle nudge: *"Eleanor's lab work is due this wee
 
 **Dr. Lisa Chen, 44, Internal Medicine**
 
-Dr. Chen went into medicine to help people. Twenty years later, she spends more time clicking than connecting. She sees 22 patients a day, stays two hours late finishing notes, and dreams about the days when she actually *talked* to patients instead of typing while they talked.
+Dr. Chen went into medicine to help people. Twenty years later, she spends more time clicking than connecting. She sees 22 patients a day, stays two hours late finishing notes, and dreams about the days when she actually _talked_ to patients instead of typing while they talked.
 
 Her current reality: Before each visit, she scrambles through the chart - hunting for the last A1C, checking which meds need refills, remembering what they discussed last time. During the visit, she's half-listening while documenting. After, she places orders one by one, writes the note, sends referrals, updates the care plan. Every patient is 15 minutes of face time and 20 minutes of administrative aftermath.
 
@@ -259,11 +270,13 @@ Dr. Chen walks into Exam Room 3. Eleanor is already seated, and the Aura display
 **Eleanor Vance - Ready for Visit**
 
 📋 **Pre-Visit Input** (Eleanor's words):
-- "Tingling in my legs is getting worse" ← *flagged: neuropathy screening*
-- "Metformin making me nauseous" ← *alternatives prepared*
-- "Worried about my A1C" ← *latest result loaded: 6.8% stable*
+
+- "Tingling in my legs is getting worse" ← _flagged: neuropathy screening_
+- "Metformin making me nauseous" ← _alternatives prepared_
+- "Worried about my A1C" ← _latest result loaded: 6.8% stable_
 
 📊 **Aura Analysis:**
+
 - A1C: 6.8% (stable, within target)
 - eGFR: 78 (mild decrease - monitor)
 - Gaps: Annual foot exam overdue (HEDIS), neuropathy assessment indicated
@@ -273,7 +286,7 @@ Dr. Chen doesn't hunt. She scans for 10 seconds and knows exactly where to start
 
 "Eleanor, I saw your message about the tingling. Tell me more about that."
 
-She *listens*. Actually listens. No clicking. Aura captures the conversation - voice recognition transcribing in the background, AI identifying clinical signals.
+She _listens_. Actually listens. No clicking. Aura captures the conversation - voice recognition transcribing in the background, AI identifying clinical signals.
 
 When Eleanor mentions the Metformin nausea, Aura silently surfaces the Decision Aid: three alternatives with pros, cons, and Eleanor's specific factors (kidney function, cost, weight goals). Dr. Chen turns the screen toward Eleanor. "Let's look at your options together."
 
@@ -284,6 +297,7 @@ As they discuss the leg tingling, Aura has already identified: this warrants pod
 At the end of the 15-minute visit, Dr. Chen glances at the Actions Panel:
 
 **Ready for Approval:**
+
 - ✓ Rx: Jardiance 10mg daily (replacing Metformin)
 - ✓ Referral: Podiatry - Dr. Patel (neuropathy eval)
 - ✓ Lab: BMP in 2 weeks (kidney function check)
@@ -294,7 +308,7 @@ Dr. Chen reviews for 5 seconds. Everything is right. She taps **"Approve All."**
 
 Done. Note generated. Orders sent. Referral transmitted. Caregiver notified. HEDIS measure captured.
 
-She looks at Eleanor. "Any other questions?" She has *time* to ask that now.
+She looks at Eleanor. "Any other questions?" She has _time_ to ask that now.
 
 **The transformation:** Dr. Chen goes home at 5:30 PM. Her notes are done. She spent her day listening to patients and making decisions - the work she trained for. She texts her husband: "I actually enjoyed work today."
 
@@ -318,16 +332,17 @@ Marcus starts his shift and opens his Aura queue:
 
 **Your Actions - Morning**
 
-| Patient | Action | Priority | Status |
-|---------|--------|----------|--------|
-| Eleanor Vance | Foot exam (monofilament) | 🟡 Before provider | Ready |
-| James Morton | Flu vaccine | 🟢 Standing order | Ready |
-| Patricia Liu | BP recheck | 🟢 Standing order | Ready |
-| Robert Kim | Diabetes education | 🟡 Post-visit | Pending |
+| Patient       | Action                   | Priority           | Status  |
+| ------------- | ------------------------ | ------------------ | ------- |
+| Eleanor Vance | Foot exam (monofilament) | 🟡 Before provider | Ready   |
+| James Morton  | Flu vaccine              | 🟢 Standing order  | Ready   |
+| Patricia Liu  | BP recheck               | 🟢 Standing order  | Ready   |
+| Robert Kim    | Diabetes education       | 🟡 Post-visit      | Pending |
 
 Before Eleanor even sees Dr. Chen, Marcus has clear instructions:
 
 **Eleanor Vance - Pre-Visit Prep**
+
 - ✅ Vitals (standard)
 - ✅ Monofilament foot exam (HEDIS gap - overdue)
 - ✅ Confirm: still experiencing leg tingling? (pre-visit input flag)
@@ -341,14 +356,14 @@ After the visit, Marcus's queue updates:
 
 **Eleanor Vance - Post-Visit Actions**
 
-| Action | Details | Your Role |
-|--------|---------|-----------|
-| Rx: Jardiance | Sent to Walgreens | ✅ Auto-complete |
-| Referral: Podiatry | Dr. Patel, Jan 22 | ✅ Auto-scheduled |
-| Lab: BMP | 2 weeks | Print slip if patient wants |
-| Education: Jardiance | New medication | 🟡 **You: Counsel patient** |
+| Action               | Details           | Your Role                   |
+| -------------------- | ----------------- | --------------------------- |
+| Rx: Jardiance        | Sent to Walgreens | ✅ Auto-complete            |
+| Referral: Podiatry   | Dr. Patel, Jan 22 | ✅ Auto-scheduled           |
+| Lab: BMP             | 2 weeks           | Print slip if patient wants |
+| Education: Jardiance | New medication    | 🟡 **You: Counsel patient** |
 
-Marcus walks Eleanor out and spends 3 minutes explaining Jardiance - what to expect, when to take it, signs of low blood sugar. He's *teaching*, not just handing over a printout.
+Marcus walks Eleanor out and spends 3 minutes explaining Jardiance - what to expect, when to take it, signs of low blood sugar. He's _teaching_, not just handing over a printout.
 
 "The pharmacy will have it ready tomorrow. Dr. Patel's office will call to confirm your podiatry appointment. Any questions?"
 
@@ -376,13 +391,13 @@ Denise opens Aura at 8 AM:
 
 **Your Panel - Priority Dashboard**
 
-| Priority | Patient | Trigger | Action Needed |
-|----------|---------|---------|---------------|
-| 🔴 Critical | Robert Kim | Hospital discharge yesterday | Transition call today |
-| 🔴 Critical | Eleanor Vance | New neuropathy dx + med change | Check-in in 5 days |
-| 🟡 High | Margaret Thompson | A1C 9.2 (rising) | Care plan review |
-| 🟡 High | William Davis | Missed podiatry appt x2 | Barrier assessment |
-| 🟢 Routine | 12 patients | Annual wellness gaps | Outreach batch |
+| Priority    | Patient           | Trigger                        | Action Needed         |
+| ----------- | ----------------- | ------------------------------ | --------------------- |
+| 🔴 Critical | Robert Kim        | Hospital discharge yesterday   | Transition call today |
+| 🔴 Critical | Eleanor Vance     | New neuropathy dx + med change | Check-in in 5 days    |
+| 🟡 High     | Margaret Thompson | A1C 9.2 (rising)               | Care plan review      |
+| 🟡 High     | William Davis     | Missed podiatry appt x2        | Barrier assessment    |
+| 🟢 Routine  | 12 patients       | Annual wellness gaps           | Outreach batch        |
 
 She didn't build this list. Aura built it from real-time signals - hospital ADT feeds, lab results, appointment no-shows, care plan milestones.
 
@@ -391,6 +406,7 @@ She taps **Robert Kim**:
 **Robert Kim - Post-Discharge Transition**
 
 📋 **Context:**
+
 - Discharged: Community Hospital, yesterday
 - Reason: CHF exacerbation
 - New meds: Lasix increased to 40mg, added potassium
@@ -398,10 +414,12 @@ She taps **Robert Kim**:
 - Risk: High readmission risk (CHF + lives alone)
 
 📞 **Suggested Outreach:**
+
 - Call script prepared (medication reconciliation focus)
 - Questions to ask: daily weights? Scale at home? Understanding of fluid restriction?
 
 🎯 **Actions if concerning:**
+
 - Escalate to provider (one tap)
 - Schedule home health eval (one tap)
 - Move up PCP appointment (one tap)
@@ -419,6 +437,7 @@ She moves to Eleanor Vance. Aura shows:
 - Next touch: Check-in due in 2 days (auto-scheduled)
 
 📱 **Suggested outreach method:** Text (patient preference)
+
 - "Hi Eleanor, how are you feeling on the new medication? Any dizziness or nausea?"
 
 Denise reviews the suggested message, tweaks one word, sends. Eleanor will respond when convenient. No phone tag.
@@ -443,19 +462,21 @@ Her old reality: She'd worry about it all day. Maybe call the office, wait on ho
 
 Eleanor opens the Aura app on her phone. She sees her Care Plan with the recent changes highlighted. There's a button: **"Message your care team."**
 
-She types: *"I felt dizzy when I stood up this morning. Is this from the new medicine?"*
+She types: _"I felt dizzy when I stood up this morning. Is this from the new medicine?"_
 
 Within seconds, Aura responds - **gathering information, not diagnosing**:
 
-> *"Thanks for letting us know, Eleanor. I'll share this with your care team right away. To help them understand what's happening, a few quick questions:*
-> - *Did you eat breakfast this morning?*
-> - *How much water have you had today?*
-> - *Is the dizziness happening every time you stand, or just that once?*
-> - *Any chest pain, shortness of breath, or other symptoms?"*
+> _"Thanks for letting us know, Eleanor. I'll share this with your care team right away. To help them understand what's happening, a few quick questions:_
+>
+> - _Did you eat breakfast this morning?_
+> - _How much water have you had today?_
+> - _Is the dizziness happening every time you stand, or just that once?_
+> - _Any chest pain, shortness of breath, or other symptoms?"_
 
-Eleanor replies: *"I skipped breakfast. I've only had one cup of coffee. It just happened the one time. No other symptoms."*
+Eleanor replies: _"I skipped breakfast. I've only had one cup of coffee. It just happened the one time. No other symptoms."_
 
 **Behind the scenes:** Aura has already flagged this for Denise (care manager) with full context:
+
 - Patient: Eleanor Vance, 58
 - Recent change: Metformin → Jardiance (10 days ago)
 - Symptom: Orthostatic dizziness, single episode
@@ -465,33 +486,32 @@ Eleanor replies: *"I skipped breakfast. I've only had one cup of coffee. It just
 
 Denise sees the alert, reviews the AI-prepared context in 10 seconds, and sends a response **through Aura** (the clinical guidance comes from a licensed professional, not the AI):
 
-> *"Hi Eleanor, this is Denise from Dr. Chen's office. Thanks for letting us know about the dizziness. Based on what you've shared, this is likely related to not eating with your new medication and being a bit dehydrated. Here's what we recommend:*
+> _"Hi Eleanor, this is Denise from Dr. Chen's office. Thanks for letting us know about the dizziness. Based on what you've shared, this is likely related to not eating with your new medication and being a bit dehydrated. Here's what we recommend:_
 >
-> *✓ Eat a small snack now*
-> *✓ Drink a full glass of water*
-> *✓ Always take Jardiance with food*
+> _✓ Eat a small snack now_ > _✓ Drink a full glass of water_ > _✓ Always take Jardiance with food_
 >
-> *If it happens again after eating, or if you feel chest pain or severe dizziness, call us right away or dial 911.*
+> _If it happens again after eating, or if you feel chest pain or severe dizziness, call us right away or dial 911._
 >
-> *I'll check back with you tomorrow. Feel free to message anytime."*
+> _I'll check back with you tomorrow. Feel free to message anytime."_
 
 Eleanor feels reassured. The guidance came from a real nurse, in minutes instead of hours.
 
 Two days later, Aura sends a **pre-approved follow-up** (templated, not AI-generated medical advice):
 
-> *"Hi Eleanor - just checking in. How are you feeling since you messaged us about the dizziness? Any more episodes?"*
+> _"Hi Eleanor - just checking in. How are you feeling since you messaged us about the dizziness? Any more episodes?"_
 
-Eleanor responds: *"All better! I've been eating breakfast and drinking more water."*
+Eleanor responds: _"All better! I've been eating breakfast and drinking more water."_
 
 Denise sees the positive response, closes the loop with one tap, and Aura confirms:
 
-> *"Great to hear! We've noted this in your chart. Your next check-in is in 2 weeks for your lab work reminder."*
+> _"Great to hear! We've noted this in your chart. Your next check-in is in 2 weeks for your lab work reminder."_
 
-**The transformation:** Eleanor feels cared for *between* visits. She got helpful guidance from a real nurse in minutes, not hours. The AI handled the information gathering and routing - the clinical judgment came from Denise. Everyone stayed on the right side of FDA regulations.
+**The transformation:** Eleanor feels cared for _between_ visits. She got helpful guidance from a real nurse in minutes, not hours. The AI handled the information gathering and routing - the clinical judgment came from Denise. Everyone stayed on the right side of FDA regulations.
 
 She tells her daughter Maria: "It's like having the clinic in my pocket - I actually talked to a nurse within 10 minutes."
 
 **CDS Compliance Note:** In this journey, Aura:
+
 - ✅ Gathered and organized patient information
 - ✅ Routed to licensed healthcare professional for clinical guidance
 - ✅ Presented context to help clinician make independent decision
@@ -503,14 +523,14 @@ She tells her daughter Maria: "It's like having the clinic in my pocket - I actu
 
 ### Journey Requirements Summary
 
-| Journey | Key Capabilities Required |
-|---------|---------------------------|
-| **Eleanor (Patient - Encounter)** | Pre-visit input, visible agenda, shared decision-making, care plan updates, caregiver notification |
-| **Maria (Caregiver)** | Role designation, automatic summaries, caregiver-specific actions, reminder delegation |
-| **Dr. Chen (Physician)** | Pre-visit synthesis, ambient voice capture, decision aids, silver-plattered actions, one-tap approval, auto-documentation |
-| **Marcus (MA)** | Role-based action queues, pre-visit prep, standing orders, education prompts, one-tap documentation |
-| **Denise (Care Manager)** | Priority stratification, ADT feeds, suggested outreach, one-tap escalation, panel analytics |
-| **Eleanor (Async)** | Patient messaging, AI triage/gather (NOT diagnose), context preparation for clinician, licensed professional response, templated follow-ups, CDS-compliant design |
+| Journey                           | Key Capabilities Required                                                                                                                                         |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Eleanor (Patient - Encounter)** | Pre-visit input, visible agenda, shared decision-making, care plan updates, caregiver notification                                                                |
+| **Maria (Caregiver)**             | Role designation, automatic summaries, caregiver-specific actions, reminder delegation                                                                            |
+| **Dr. Chen (Physician)**          | Pre-visit synthesis, ambient voice capture, decision aids, silver-plattered actions, one-tap approval, auto-documentation                                         |
+| **Marcus (MA)**                   | Role-based action queues, pre-visit prep, standing orders, education prompts, one-tap documentation                                                               |
+| **Denise (Care Manager)**         | Priority stratification, ADT feeds, suggested outreach, one-tap escalation, panel analytics                                                                       |
+| **Eleanor (Async)**               | Patient messaging, AI triage/gather (NOT diagnose), context preparation for clinician, licensed professional response, templated follow-ups, CDS-compliant design |
 
 ## Domain-Specific Requirements
 
@@ -524,14 +544,15 @@ Aura operates in a high-complexity regulatory environment requiring careful atte
 
 Aura qualifies for CDS exemption by meeting all four criteria:
 
-| Criterion | Aura Compliance |
-|-----------|-----------------|
-| **Data Types** | Uses interpreted clinical data (diagnoses, lab results, guidelines) - not raw images/signals |
-| **Processing** | Displays, summarizes, matches, compares - does not generate new findings from raw data |
-| **Intended User** | Licensed healthcare professionals (clinician-facing AI) |
-| **Transparency** | Shows reasoning, inputs, sources, limitations; clinician independently evaluates |
+| Criterion         | Aura Compliance                                                                              |
+| ----------------- | -------------------------------------------------------------------------------------------- |
+| **Data Types**    | Uses interpreted clinical data (diagnoses, lab results, guidelines) - not raw images/signals |
+| **Processing**    | Displays, summarizes, matches, compares - does not generate new findings from raw data       |
+| **Intended User** | Licensed healthcare professionals (clinician-facing AI)                                      |
+| **Transparency**  | Shows reasoning, inputs, sources, limitations; clinician independently evaluates             |
 
 **Critical Design Constraints:**
+
 - Clinician-facing: AI suggests, clinician approves ("silver platter" model)
 - Patient-facing: AI gathers information and routes to licensed professional - NO diagnostic statements to patients
 - Time-critical alerts route to humans, not auto-action
@@ -544,14 +565,15 @@ Aura qualifies for CDS exemption by meeting all four criteria:
 
 **Strategy:** HIPAA-compliant cloud APIs with Business Associate Agreements
 
-| Component | Compliance Approach |
-|-----------|---------------------|
-| **AI Provider** | Anthropic HIPAA-eligible API with BAA |
-| **Vector DB** | HIPAA-compliant vendor (Pinecone) with BAA |
-| **Data Storage** | Oystehr platform (HIPAA-compliant) |
-| **Caregiver Access** | Requires explicit patient authorization |
+| Component            | Compliance Approach                        |
+| -------------------- | ------------------------------------------ |
+| **AI Provider**      | Anthropic HIPAA-eligible API with BAA      |
+| **Vector DB**        | HIPAA-compliant vendor (Pinecone) with BAA |
+| **Data Storage**     | Oystehr platform (HIPAA-compliant)         |
+| **Caregiver Access** | Requires explicit patient authorization    |
 
 **Technical Requirements:**
+
 - Encryption at rest and in transit (AES-256, TLS 1.3)
 - Role-based access controls
 - Complete audit trails for all PHI access
@@ -564,31 +586,33 @@ Aura qualifies for CDS exemption by meeting all four criteria:
 
 **Pre-Deployment Validation (Sequential):**
 
-| Phase | Activity | Gate Criteria |
-|-------|----------|---------------|
-| **1. Chart Review** | Clinicians review AI suggestions against real charts | Primary gate - must pass before go-live |
+| Phase                   | Activity                                               | Gate Criteria                               |
+| ----------------------- | ------------------------------------------------------ | ------------------------------------------- |
+| **1. Chart Review**     | Clinicians review AI suggestions against real charts   | Primary gate - must pass before go-live     |
 | **2. Parallel Running** | AI suggests alongside clinician's independent decision | Measure agreement rate, identify edge cases |
-| **3. Formal Pilot** | Limited deployment with safety monitoring | Defined success metrics before expansion |
+| **3. Formal Pilot**     | Limited deployment with safety monitoring              | Defined success metrics before expansion    |
 
 **Post-Deployment Monitoring (Ongoing):**
 
-| Activity | Frequency | Owner |
-|----------|-----------|-------|
+| Activity                | Frequency            | Owner               |
+| ----------------------- | -------------------- | ------------------- |
 | **Human Sample Review** | Continuous (primary) | Clinical leadership |
-| **Near-Miss Reporting** | As-needed | All users |
-| **Accuracy Audits** | Monthly/Quarterly | Quality team |
+| **Near-Miss Reporting** | As-needed            | All users           |
+| **Accuracy Audits**     | Monthly/Quarterly    | Quality team        |
 
 ### Liability Management
 
 **Strategy:** Legal review before beta deployment
 
 **Requirements:**
+
 - Malpractice coverage confirmation for AI-assisted CDS
 - Terms of service language for AI assistance disclosure
 - Patient consent/notification approach defined
 - Documentation requirements validated by legal counsel
 
 **Audit Trail Requirements:**
+
 - What AI suggested (with reasoning)
 - What clinician approved/modified/rejected
 - Timestamp and user identity
@@ -597,11 +621,13 @@ Aura qualifies for CDS exemption by meeting all four criteria:
 ### Implementation Considerations
 
 **Before 4-Week Demo:**
+
 - Anthropic BAA executed
 - Basic audit logging in place
 - CDS-compliant UX patterns established
 
 **Before 6-Month Beta:**
+
 - All BAAs executed (Anthropic, Pinecone, any others)
 - Chart review validation complete
 - Legal review complete
@@ -609,6 +635,7 @@ Aura qualifies for CDS exemption by meeting all four criteria:
 - Parallel running data collected
 
 **Before 12-Month Production:**
+
 - Formal pilot completed with documented outcomes
 - Ongoing monitoring systems operational
 - Near-miss reporting workflow established
@@ -622,16 +649,17 @@ Aura qualifies for CDS exemption by meeting all four criteria:
 
 Most clinical AI tools follow a truncated framework: Acquire → Aggregate → Analyze → (stop). They analyze data but dump suggestions on physicians, who must manually execute every action. Aura's innovation is completing the "Act" step through intelligent action distribution.
 
-| Traditional AI | Aura Innovation |
-|----------------|-----------------|
-| Presents analysis to physician | Distributes actions to appropriate actors |
-| Physician executes everything | Nurse, care manager, patient, caregiver each receive relevant actions |
-| Creates cognitive load | Reduces cognitive load |
-| Encounter-centric output | Patient-centric workflow |
+| Traditional AI                 | Aura Innovation                                                       |
+| ------------------------------ | --------------------------------------------------------------------- |
+| Presents analysis to physician | Distributes actions to appropriate actors                             |
+| Physician executes everything  | Nurse, care manager, patient, caregiver each receive relevant actions |
+| Creates cognitive load         | Reduces cognitive load                                                |
+| Encounter-centric output       | Patient-centric workflow                                              |
 
 **2. Individual as Primary Key**
 
 Traditional EHRs organize around encounters - each visit is a discrete event. Aura challenges this fundamental assumption by treating the individual as the primary key, enabling:
+
 - Longitudinal care view that spans encounters
 - Quality gaps that persist until closed (not just flagged per visit)
 - Caregiver relationships that transcend individual appointments
@@ -640,6 +668,7 @@ Traditional EHRs organize around encounters - each visit is a discrete event. Au
 **3. Shared Transparency Model**
 
 Existing clinical systems maintain separate views - clinicians see one thing, patients another. Aura's shared transparency means clinician and patient literally see the same screen, establishing:
+
 - Trust through visibility (patient sees their priorities listed)
 - Collaborative decision-making (shared decision aids)
 - Reduced information asymmetry
@@ -648,6 +677,7 @@ Existing clinical systems maintain separate views - clinicians see one thing, pa
 **4. CDS-Compliant Patient-Facing AI**
 
 Most AI health assistants either avoid patient interaction entirely or risk FDA classification as medical devices. Aura threads the needle with a novel approach:
+
 - AI gathers information from patients (compliant)
 - AI routes to licensed professionals (compliant)
 - Licensed professional provides clinical guidance (compliant)
@@ -659,42 +689,46 @@ This enables async patient engagement while remaining CDS-exempt.
 ### Market Context & Competitive Landscape
 
 **Current Market Gap:**
+
 - Ambient scribes focus on documentation (Acquire/Aggregate), not action
 - Care management platforms lack AI-driven prioritization
 - Patient portals are passive record viewers, not engagement tools
 - No existing solution completes Quadruple-A with multi-actor distribution
 
 **Adjacent Solutions:**
+
 - Nuance DAX / Abridge / Nabla: Ambient documentation only
 - HealthChampion / Wellframe: Care management without AI synthesis
 - Epic MyChart: Patient portal without shared real-time view
 
 **Competitive Moat:**
+
 - Built on proven FHIR R4 backbone (Ottehr/Oystehr)
 - Brownfield advantage - existing 119+ API endpoints
 - Neuro-symbolic roadmap differentiates from pure LLM competitors
 
 ### Validation Approach
 
-| Innovation | Validation Method |
-|------------|-------------------|
-| **Quadruple-A Completion** | Demo: Show action distribution to 4+ actor types from single encounter |
-| **Individual as Primary Key** | Measure: Longitudinal gap closure rate vs. encounter-based systems |
-| **Shared Transparency** | User testing: Patient comprehension scores, trust ratings |
-| **CDS-Compliant Patient AI** | Legal review + FDA guidance alignment checklist |
-| **Action Routing Accuracy** | Metric: % of actions reaching correct actor (target: 95% at 6mo, 99% at 12mo) |
+| Innovation                    | Validation Method                                                             |
+| ----------------------------- | ----------------------------------------------------------------------------- |
+| **Quadruple-A Completion**    | Demo: Show action distribution to 4+ actor types from single encounter        |
+| **Individual as Primary Key** | Measure: Longitudinal gap closure rate vs. encounter-based systems            |
+| **Shared Transparency**       | User testing: Patient comprehension scores, trust ratings                     |
+| **CDS-Compliant Patient AI**  | Legal review + FDA guidance alignment checklist                               |
+| **Action Routing Accuracy**   | Metric: % of actions reaching correct actor (target: 95% at 6mo, 99% at 12mo) |
 
 ### Risk Mitigation
 
-| Innovation Risk | Mitigation Strategy |
-|-----------------|---------------------|
-| **Quadruple-A over-automation** | Clinician approval gate for orders/prescriptions; "silver platter" model preserves autonomy |
-| **Primary key migration** | Brownfield on Ottehr - FHIR Patient resource already supports individual-centric design |
-| **Shared view privacy concerns** | Patient controls what caregivers see; clear authorization workflows |
-| **CDS boundary creep** | Explicit design constraints documented; regular legal review; CDS compliance checklist |
-| **Neuro-symbolic complexity** | Start with LLM, add symbolic components incrementally; fallback to LLM-only if delays |
+| Innovation Risk                  | Mitigation Strategy                                                                         |
+| -------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Quadruple-A over-automation**  | Clinician approval gate for orders/prescriptions; "silver platter" model preserves autonomy |
+| **Primary key migration**        | Brownfield on Ottehr - FHIR Patient resource already supports individual-centric design     |
+| **Shared view privacy concerns** | Patient controls what caregivers see; clear authorization workflows                         |
+| **CDS boundary creep**           | Explicit design constraints documented; regular legal review; CDS compliance checklist      |
+| **Neuro-symbolic complexity**    | Start with LLM, add symbolic components incrementally; fallback to LLM-only if delays       |
 
 **Fallback Positions:**
+
 - If full Quadruple-A is too complex: Ship documentation + single-actor actions first
 - If shared view causes friction: Offer "professional view" toggle
 - If neuro-symbolic is delayed: LLM-only approach still provides significant value
@@ -705,13 +739,14 @@ This enables async patient engagement while remaining CDS-exempt.
 
 **Model:** Three-tier hierarchy (design for scale, ship for today)
 
-| Tier | Entity | MVP Status |
-|------|--------|------------|
+| Tier        | Entity        | MVP Status             |
+| ----------- | ------------- | ---------------------- |
 | **Level 1** | Health System | Schema exists, dormant |
-| **Level 2** | Practice | Active tenant boundary |
-| **Level 3** | Provider | Active |
+| **Level 2** | Practice      | Active tenant boundary |
+| **Level 3** | Provider      | Active                 |
 
 **Design Decisions:**
+
 - Practice is the active tenant boundary for MVP
 - Health System tier built into data model but UI/features dormant
 - Avoids migration pain when first health system customer arrives
@@ -722,29 +757,31 @@ This enables async patient engagement while remaining CDS-exempt.
 
 **Role Matrix:**
 
-| Category | Role | Core Permissions |
-|----------|------|------------------|
-| **Clinical** | Physician | Approve orders, full clinical access, supervision |
-| | MA | Execute delegated tasks, document, rooming |
-| | Care Manager (RN) | Panel management, outreach, care coordination |
-| | Nurse (RN/LPN) | Clinical tasks, triage, patient communication |
-| **Patient-Side** | Patient | Own data, messaging, care plan view |
-| | Caregiver | Delegated patient view (patient-authorized) |
-| **Administrative** | Practice Admin | Practice-level configuration, reporting |
-| | Billing / RCM | Claims, coding, payment posting, denials |
-| | Quality Reporting | HEDIS dashboards, gap reports, attestation |
-| | Scheduling | Appointment management, provider calendars |
-| **IT / Technical** | User Admin | User creation, role assignment, deactivation |
-| | Integration Admin | API keys, external system connections |
-| | Interface Admin | HL7/FHIR interface setup, mapping, monitoring |
+| Category           | Role              | Core Permissions                                  |
+| ------------------ | ----------------- | ------------------------------------------------- |
+| **Clinical**       | Physician         | Approve orders, full clinical access, supervision |
+|                    | MA                | Execute delegated tasks, document, rooming        |
+|                    | Care Manager (RN) | Panel management, outreach, care coordination     |
+|                    | Nurse (RN/LPN)    | Clinical tasks, triage, patient communication     |
+| **Patient-Side**   | Patient           | Own data, messaging, care plan view               |
+|                    | Caregiver         | Delegated patient view (patient-authorized)       |
+| **Administrative** | Practice Admin    | Practice-level configuration, reporting           |
+|                    | Billing / RCM     | Claims, coding, payment posting, denials          |
+|                    | Quality Reporting | HEDIS dashboards, gap reports, attestation        |
+|                    | Scheduling        | Appointment management, provider calendars        |
+| **IT / Technical** | User Admin        | User creation, role assignment, deactivation      |
+|                    | Integration Admin | API keys, external system connections             |
+|                    | Interface Admin   | HL7/FHIR interface setup, mapping, monitoring     |
 
 **Role Design Principles:**
+
 - Roles are composable (one person can hold multiple roles)
 - Small practice: Office Manager = Practice Admin + Scheduling + User Admin
 - Large practice: Dedicated personnel per role
 - All roles inherit from base authenticated user
 
 **Caregiver Authorization Model:**
+
 - Patient-controlled (not practice-controlled)
 - Patient explicitly grants access to specific caregivers
 - Patient defines scope of access (full vs. limited)
@@ -754,11 +791,13 @@ This enables async patient engagement while remaining CDS-exempt.
 ### Subscription & Pricing Model
 
 **MVP Pricing:**
+
 - Model: Per-provider/month
 - Includes: All supporting roles under that provider (MA, care manager access bundled)
 - Billing: Practice-level invoice
 
 **Future Pricing Options:**
+
 - Per-attributed-patient/month (VBC-aligned)
 - Hybrid: Base platform fee + per-provider or per-patient
 - Volume discounts for health systems (when Level 1 activates)
@@ -767,24 +806,25 @@ This enables async patient engagement while remaining CDS-exempt.
 
 **MVP Integration Scope:**
 
-| System | Integration | Priority | Notes |
-|--------|-------------|----------|-------|
-| **Oystehr/Ottehr** | FHIR R4 native | Core | Foundation platform |
-| **Anthropic** | REST API + BAA | Core | AI services |
-| **Pinecone** | REST API + BAA | Core | Vector DB for semantic retrieval |
-| **eRx** | Via Oystehr SDK | Core | Already built into Ottehr |
+| System             | Integration     | Priority | Notes                            |
+| ------------------ | --------------- | -------- | -------------------------------- |
+| **Oystehr/Ottehr** | FHIR R4 native  | Core     | Foundation platform              |
+| **Anthropic**      | REST API + BAA  | Core     | AI services                      |
+| **Pinecone**       | REST API + BAA  | Core     | Vector DB for semantic retrieval |
+| **eRx**            | Via Oystehr SDK | Core     | Already built into Ottehr        |
 
 **Growth Integration Roadmap:**
 
-| Category | Systems | Standard | Phase |
-|----------|---------|----------|-------|
-| **EHR Interop** | Epic, Cerner, athena | FHIR R4, HL7v2 | Growth |
-| **HIE** | Carequality, CommonWell | IHE profiles | Growth |
-| **Hospital** | ADT feeds, discharge summaries | HL7v2 ADT | Growth |
-| **ACO/VBC** | Population health platforms | FHIR Bulk Data | Growth |
-| **Labs** | Quest, Labcorp | HL7v2 ORU | Growth |
+| Category        | Systems                        | Standard       | Phase  |
+| --------------- | ------------------------------ | -------------- | ------ |
+| **EHR Interop** | Epic, Cerner, athena           | FHIR R4, HL7v2 | Growth |
+| **HIE**         | Carequality, CommonWell        | IHE profiles   | Growth |
+| **Hospital**    | ADT feeds, discharge summaries | HL7v2 ADT      | Growth |
+| **ACO/VBC**     | Population health platforms    | FHIR Bulk Data | Growth |
+| **Labs**        | Quest, Labcorp                 | HL7v2 ORU      | Growth |
 
 **Interoperability Principles:**
+
 - FHIR-first architecture (Ottehr foundation)
 - Support both push (send data out) and pull (query external sources)
 - Patient record aggregation with provenance tracking
@@ -795,14 +835,14 @@ This enables async patient engagement while remaining CDS-exempt.
 
 **Status:** Production-ready, inherited from Ottehr/Oystehr
 
-| Capability | Available |
-|------------|-----------|
-| Medication search | ✅ Via Oystehr SDK |
-| Drug interaction checking | ✅ Via Oystehr SDK |
-| Practitioner enrollment | ✅ SSO-based workflow |
-| Patient sync to eRx network | ✅ Automatic |
-| Prescription transmission | ✅ NCPDP SCRIPT via Oystehr |
-| Pharmacy selection | ✅ Built into UI |
+| Capability                  | Available                   |
+| --------------------------- | --------------------------- |
+| Medication search           | ✅ Via Oystehr SDK          |
+| Drug interaction checking   | ✅ Via Oystehr SDK          |
+| Practitioner enrollment     | ✅ SSO-based workflow       |
+| Patient sync to eRx network | ✅ Automatic                |
+| Prescription transmission   | ✅ NCPDP SCRIPT via Oystehr |
+| Pharmacy selection          | ✅ Built into UI            |
 
 **Vendor Note:** Oystehr abstracts eRx vendor selection. Confirm Photon availability with Oystehr team if preferred over default vendor.
 
@@ -820,27 +860,29 @@ The demo proves the core thesis: AI can silver-platter clinical actions for one-
 
 **Target Journey:** Dr. Chen (Physician) - end-to-end encounter flow
 
-| Capability | Implementation | Priority |
-|------------|----------------|----------|
-| Pre-visit patient input | Real (text-based) | Must |
-| AI synthesis & analysis | Real (Anthropic API) | Must |
-| Gap identification (HEDIS) | Real | Must |
-| Decision aids | Real (AI-generated) | Must |
-| Actions Panel | Real (core UX) | Must |
-| One-tap "Approve All" | Real (core UX) | Must |
-| Auto-documentation | Real (AI-generated) | Must |
-| Voice/ambient capture | Simulated (typed/pre-recorded) | Nice |
-| Action routing visualization | Visual demo | Must |
-| FHIR persistence | Mocked | Acceptable |
-| eRx transmission | UI only (no live transmission) | Acceptable |
-| Caregiver notification | Simulated (show mock) | Nice |
+| Capability                   | Implementation                 | Priority   |
+| ---------------------------- | ------------------------------ | ---------- |
+| Pre-visit patient input      | Real (text-based)              | Must       |
+| AI synthesis & analysis      | Real (Anthropic API)           | Must       |
+| Gap identification (HEDIS)   | Real                           | Must       |
+| Decision aids                | Real (AI-generated)            | Must       |
+| Actions Panel                | Real (core UX)                 | Must       |
+| One-tap "Approve All"        | Real (core UX)                 | Must       |
+| Auto-documentation           | Real (AI-generated)            | Must       |
+| Voice/ambient capture        | Simulated (typed/pre-recorded) | Nice       |
+| Action routing visualization | Visual demo                    | Must       |
+| FHIR persistence             | Mocked                         | Acceptable |
+| eRx transmission             | UI only (no live transmission) | Acceptable |
+| Caregiver notification       | Simulated (show mock)          | Nice       |
 
 **Demo Constraints:**
+
 - Single practice, single provider, single patient scenario
 - Focus on flow and UX, not backend completeness
 - "Wizard of Oz" acceptable for non-core features
 
 **Demo Success Criteria:**
+
 - Viewer says "I get it - this changes how clinical work happens"
 - End-to-end flow completes in under 5 minutes
 - Actions Panel clearly shows routing to multiple actors
@@ -851,33 +893,35 @@ The demo proves the core thesis: AI can silver-platter clinical actions for one-
 **Goal:** Real clinical use with 5-10 physicians
 
 **Journeys Supported:**
+
 - Dr. Chen (Physician) - Full production implementation
 - Marcus (MA) - Pre-visit prep, delegated tasks, documentation
 - Eleanor (Patient - Encounter) - Pre-visit input, shared view, care plan
 
 **Core Capabilities:**
 
-| Category | Capabilities |
-|----------|--------------|
-| **Care Plan** | FHIR-persisted, patient-visible, longitudinal view |
-| **Actions Panel** | Full routing to Physician, MA; notifications |
-| **Documentation** | Production-quality AI notes, customizable templates |
-| **Voice Capture** | Real ambient transcription (with typed fallback) |
-| **eRx** | Live prescribing via Oystehr SDK |
-| **Orders/Referrals** | Real transmission to labs, specialists |
+| Category             | Capabilities                                        |
+| -------------------- | --------------------------------------------------- |
+| **Care Plan**        | FHIR-persisted, patient-visible, longitudinal view  |
+| **Actions Panel**    | Full routing to Physician, MA; notifications        |
+| **Documentation**    | Production-quality AI notes, customizable templates |
+| **Voice Capture**    | Real ambient transcription (with typed fallback)    |
+| **eRx**              | Live prescribing via Oystehr SDK                    |
+| **Orders/Referrals** | Real transmission to labs, specialists              |
 
 **Technical Foundation:**
 
-| Component | Status |
-|-----------|--------|
-| FHIR persistence | Full (Oystehr) |
-| HIPAA compliance | Complete (BAAs executed) |
-| Multi-tenancy | Practice-level active |
-| RBAC | Physician, MA, Patient roles |
-| Audit trails | Complete logging |
-| AI integration | Anthropic with BAA |
+| Component        | Status                       |
+| ---------------- | ---------------------------- |
+| FHIR persistence | Full (Oystehr)               |
+| HIPAA compliance | Complete (BAAs executed)     |
+| Multi-tenancy    | Practice-level active        |
+| RBAC             | Physician, MA, Patient roles |
+| Audit trails     | Complete logging             |
+| AI integration   | Anthropic with BAA           |
 
 **Phase 1 Success Criteria:**
+
 - Physicians complete notes before leaving office
 - Zero AI errors reaching patients
 - MA workflow integrated (not parallel system)
@@ -888,28 +932,31 @@ The demo proves the core thesis: AI can silver-platter clinical actions for one-
 **Goal:** Complete Quadruple-A action distribution ecosystem
 
 **Additional Journeys:**
+
 - Denise (Care Manager) - Panel dashboard, priority stratification, outreach
 - Maria (Caregiver) - Patient-authorized access, summaries, reminders
 - Eleanor (Async) - CDS-compliant messaging, AI triage routing
 
 **New Capabilities:**
 
-| Category | Capabilities |
-|----------|--------------|
-| **Transcript** | Real-time display, speaker identification |
-| **Agenda** | Multi-source tracking (patient, provider, insurance items) |
-| **Care Manager Panel** | Priority dashboard, ADT feeds, suggested outreach |
-| **Caregiver Portal** | Authorized view, action items, messaging |
-| **Async Engagement** | Patient messaging, AI information gathering, clinician routing |
-| **Quality Dashboards** | HEDIS gap tracking, measure capture, attestation |
+| Category               | Capabilities                                                   |
+| ---------------------- | -------------------------------------------------------------- |
+| **Transcript**         | Real-time display, speaker identification                      |
+| **Agenda**             | Multi-source tracking (patient, provider, insurance items)     |
+| **Care Manager Panel** | Priority dashboard, ADT feeds, suggested outreach              |
+| **Caregiver Portal**   | Authorized view, action items, messaging                       |
+| **Async Engagement**   | Patient messaging, AI information gathering, clinician routing |
+| **Quality Dashboards** | HEDIS gap tracking, measure capture, attestation               |
 
 **Additional Roles Activated:**
+
 - Care Manager (RN)
 - Caregiver
 - Quality Reporting
 - Billing/RCM (basic)
 
 **Phase 2 Success Criteria:**
+
 - Actions reach correct actor 95%+ of the time
 - Care managers manage panels, not spreadsheets
 - Caregivers informed automatically
@@ -918,6 +965,7 @@ The demo proves the core thesis: AI can silver-platter clinical actions for one-
 ### Vision: Intelligence at Scale (12+ Months)
 
 **Expansion Capabilities:**
+
 - Neuro-symbolic AI with medical knowledge graphs
 - Health System tier activation (Level 1 multi-tenancy)
 - HIE connectivity (Carequality, CommonWell, TEFCA readiness)
@@ -929,36 +977,36 @@ The demo proves the core thesis: AI can silver-platter clinical actions for one-
 
 **Technical Risks:**
 
-| Risk | Likelihood | Impact | Mitigation |
-|------|------------|--------|------------|
-| AI accuracy insufficient | Medium | High | Physician approval gate; extensive chart review validation; start narrow |
-| Voice capture quality issues | Medium | Medium | Typed fallback always available; voice is enhancement not requirement |
-| FHIR integration complexity | Low | Medium | Built on proven Ottehr foundation; leverage existing 119+ endpoints |
-| Latency exceeds targets | Medium | Medium | Async patterns; visible "thinking" indicators; optimize critical path |
+| Risk                         | Likelihood | Impact | Mitigation                                                               |
+| ---------------------------- | ---------- | ------ | ------------------------------------------------------------------------ |
+| AI accuracy insufficient     | Medium     | High   | Physician approval gate; extensive chart review validation; start narrow |
+| Voice capture quality issues | Medium     | Medium | Typed fallback always available; voice is enhancement not requirement    |
+| FHIR integration complexity  | Low        | Medium | Built on proven Ottehr foundation; leverage existing 119+ endpoints      |
+| Latency exceeds targets      | Medium     | Medium | Async patterns; visible "thinking" indicators; optimize critical path    |
 
 **Market Risks:**
 
-| Risk | Likelihood | Impact | Mitigation |
-|------|------------|--------|------------|
-| Physician resistance to AI | Medium | High | Demo with friendlies; emphasize physician control; "silver platter" not "autopilot" |
-| Workflow disruption concerns | Medium | Medium | Parallel running phase; gradual adoption; easy rollback |
-| Competitive response | Low | Medium | Speed to market; focus on Quadruple-A differentiation |
+| Risk                         | Likelihood | Impact | Mitigation                                                                          |
+| ---------------------------- | ---------- | ------ | ----------------------------------------------------------------------------------- |
+| Physician resistance to AI   | Medium     | High   | Demo with friendlies; emphasize physician control; "silver platter" not "autopilot" |
+| Workflow disruption concerns | Medium     | Medium | Parallel running phase; gradual adoption; easy rollback                             |
+| Competitive response         | Low        | Medium | Speed to market; focus on Quadruple-A differentiation                               |
 
 **Regulatory Risks:**
 
-| Risk | Likelihood | Impact | Mitigation |
-|------|------------|--------|------------|
-| CDS boundary violation | Low | Critical | Legal review before beta; explicit constraints; regular audits |
-| HIPAA breach | Low | Critical | BAAs in place; encryption; access controls; audit trails |
-| Liability exposure | Medium | High | Legal review; clear ToS; documentation of clinician approval |
+| Risk                   | Likelihood | Impact   | Mitigation                                                     |
+| ---------------------- | ---------- | -------- | -------------------------------------------------------------- |
+| CDS boundary violation | Low        | Critical | Legal review before beta; explicit constraints; regular audits |
+| HIPAA breach           | Low        | Critical | BAAs in place; encryption; access controls; audit trails       |
+| Liability exposure     | Medium     | High     | Legal review; clear ToS; documentation of clinician approval   |
 
 **Resource Risks:**
 
-| Risk | Likelihood | Impact | Mitigation |
-|------|------------|--------|------------|
-| 4-week demo timeline | Medium | Medium | Ruthless scope control; mocked backends acceptable |
-| Team bandwidth | Medium | Medium | Phase 1 can ship with 3 journeys, not all 6 |
-| Funding gap | Low | High | Demo designed to attract investment; revenue at 6 months |
+| Risk                 | Likelihood | Impact | Mitigation                                               |
+| -------------------- | ---------- | ------ | -------------------------------------------------------- |
+| 4-week demo timeline | Medium     | Medium | Ruthless scope control; mocked backends acceptable       |
+| Team bandwidth       | Medium     | Medium | Phase 1 can ship with 3 journeys, not all 6              |
+| Funding gap          | Low        | High   | Demo designed to attract investment; revenue at 6 months |
 
 ## Functional Requirements
 
@@ -1095,110 +1143,109 @@ The demo proves the core thesis: AI can silver-platter clinical actions for one-
 
 ### Performance
 
-| Requirement | Target | Context |
-|-------------|--------|---------|
-| **NFR-P1:** Standard user actions | < 1 second response | Page loads, form submissions, navigation |
-| **NFR-P2:** AI synthesis operations | 2-5 seconds with visible indicator | Pre-visit summary, decision aids, documentation generation |
-| **NFR-P3:** Real-time data sync | < 500ms propagation | Care plan updates, action status changes |
-| **NFR-P4:** Voice transcription | < 2 second latency | Near real-time transcript display during encounter |
-| **NFR-P5:** Actions Panel render | < 1 second | Silver-plattered actions available immediately at encounter end |
-| **NFR-P6:** Search operations | < 2 seconds | Medication search, patient lookup |
+| Requirement                         | Target                             | Context                                                         |
+| ----------------------------------- | ---------------------------------- | --------------------------------------------------------------- |
+| **NFR-P1:** Standard user actions   | < 1 second response                | Page loads, form submissions, navigation                        |
+| **NFR-P2:** AI synthesis operations | 2-5 seconds with visible indicator | Pre-visit summary, decision aids, documentation generation      |
+| **NFR-P3:** Real-time data sync     | < 500ms propagation                | Care plan updates, action status changes                        |
+| **NFR-P4:** Voice transcription     | < 2 second latency                 | Near real-time transcript display during encounter              |
+| **NFR-P5:** Actions Panel render    | < 1 second                         | Silver-plattered actions available immediately at encounter end |
+| **NFR-P6:** Search operations       | < 2 seconds                        | Medication search, patient lookup                               |
 
 **Rationale:** Clinical workflows require responsiveness. Slow AI operations are acceptable with clear feedback; slow UI operations disrupt care.
 
 ### Security & Compliance
 
-| Requirement | Specification |
-|-------------|---------------|
-| **NFR-S1:** Encryption at rest | AES-256 for all PHI |
-| **NFR-S2:** Encryption in transit | TLS 1.3 minimum for all connections |
-| **NFR-S3:** Authentication | Multi-factor authentication for clinical users |
-| **NFR-S4:** Session management | Automatic timeout after 15 minutes of inactivity |
-| **NFR-S5:** Access logging | 100% of PHI access logged with user, timestamp, data accessed |
-| **NFR-S6:** Audit trail integrity | Immutable audit logs, tamper-evident |
-| **NFR-S7:** Role enforcement | RBAC enforced at API level, not just UI |
-| **NFR-S8:** BAA coverage | All vendors processing PHI must have executed BAA |
-| **NFR-S9:** Penetration testing | Annual third-party security assessment before production |
-| **NFR-S10:** Incident response | Documented breach notification procedure (HIPAA 60-day rule) |
+| Requirement                       | Specification                                                 |
+| --------------------------------- | ------------------------------------------------------------- |
+| **NFR-S1:** Encryption at rest    | AES-256 for all PHI                                           |
+| **NFR-S2:** Encryption in transit | TLS 1.3 minimum for all connections                           |
+| **NFR-S3:** Authentication        | Multi-factor authentication for clinical users                |
+| **NFR-S4:** Session management    | Automatic timeout after 15 minutes of inactivity              |
+| **NFR-S5:** Access logging        | 100% of PHI access logged with user, timestamp, data accessed |
+| **NFR-S6:** Audit trail integrity | Immutable audit logs, tamper-evident                          |
+| **NFR-S7:** Role enforcement      | RBAC enforced at API level, not just UI                       |
+| **NFR-S8:** BAA coverage          | All vendors processing PHI must have executed BAA             |
+| **NFR-S9:** Penetration testing   | Annual third-party security assessment before production      |
+| **NFR-S10:** Incident response    | Documented breach notification procedure (HIPAA 60-day rule)  |
 
 **Compliance Framework:** HIPAA Security Rule, HIPAA Privacy Rule
 
 ### Scalability
 
-| Requirement | Specification |
-|-------------|---------------|
-| **NFR-SC1:** Initial capacity | Support 10 concurrent providers per practice |
-| **NFR-SC2:** Practice growth | Support 50 practices without architecture changes |
-| **NFR-SC3:** Patient volume | Support 5,000 active patients per practice |
-| **NFR-SC4:** Encounter throughput | Support 200 concurrent encounters system-wide |
-| **NFR-SC5:** Horizontal scaling | Stateless services enable horizontal scaling |
-| **NFR-SC6:** Database scaling | Tenant isolation supports database sharding if needed |
+| Requirement                       | Specification                                         |
+| --------------------------------- | ----------------------------------------------------- |
+| **NFR-SC1:** Initial capacity     | Support 10 concurrent providers per practice          |
+| **NFR-SC2:** Practice growth      | Support 50 practices without architecture changes     |
+| **NFR-SC3:** Patient volume       | Support 5,000 active patients per practice            |
+| **NFR-SC4:** Encounter throughput | Support 200 concurrent encounters system-wide         |
+| **NFR-SC5:** Horizontal scaling   | Stateless services enable horizontal scaling          |
+| **NFR-SC6:** Database scaling     | Tenant isolation supports database sharding if needed |
 
 **Growth Path:** Demo (1 practice) → Phase 1 (5-10 practices) → Phase 2 (50+ practices) → Vision (health systems)
 
 ### Reliability & Availability
 
-| Requirement | Specification |
-|-------------|---------------|
-| **NFR-R1:** Uptime target | 99.5% availability (excludes planned maintenance) |
-| **NFR-R2:** Planned maintenance | Maximum 4 hours/month, scheduled off-peak |
-| **NFR-R3:** Data durability | 99.999% (no data loss) |
-| **NFR-R4:** Backup frequency | Daily full backups, continuous transaction logs |
-| **NFR-R5:** Recovery time objective (RTO) | < 4 hours for full system recovery |
-| **NFR-R6:** Recovery point objective (RPO) | < 1 hour of data loss maximum |
-| **NFR-R7:** Graceful degradation | AI features degrade gracefully; core EHR functions remain available |
-| **NFR-R8:** Circuit breakers | External service failures don't cascade to core functionality |
+| Requirement                                | Specification                                                       |
+| ------------------------------------------ | ------------------------------------------------------------------- |
+| **NFR-R1:** Uptime target                  | 99.5% availability (excludes planned maintenance)                   |
+| **NFR-R2:** Planned maintenance            | Maximum 4 hours/month, scheduled off-peak                           |
+| **NFR-R3:** Data durability                | 99.999% (no data loss)                                              |
+| **NFR-R4:** Backup frequency               | Daily full backups, continuous transaction logs                     |
+| **NFR-R5:** Recovery time objective (RTO)  | < 4 hours for full system recovery                                  |
+| **NFR-R6:** Recovery point objective (RPO) | < 1 hour of data loss maximum                                       |
+| **NFR-R7:** Graceful degradation           | AI features degrade gracefully; core EHR functions remain available |
+| **NFR-R8:** Circuit breakers               | External service failures don't cascade to core functionality       |
 
 **Rationale:** Clinical systems require high reliability but not 99.99% uptime (cost prohibitive for MVP). Graceful degradation ensures core care continues if AI services fail.
 
 ### Accessibility
 
-| Requirement | Specification |
-|-------------|---------------|
-| **NFR-A1:** Standard compliance | WCAG 2.1 Level AA for patient-facing interfaces |
-| **NFR-A2:** Screen reader support | Full compatibility with NVDA, JAWS, VoiceOver |
-| **NFR-A3:** Keyboard navigation | All functions accessible via keyboard |
-| **NFR-A4:** Color contrast | Minimum 4.5:1 ratio for normal text |
-| **NFR-A5:** Text scaling | Support 200% zoom without horizontal scrolling |
-| **NFR-A6:** Focus indicators | Visible focus state for all interactive elements |
-| **NFR-A7:** Form labels | All form inputs have associated labels |
-| **NFR-A8:** Error identification | Errors clearly identified with suggestions |
+| Requirement                       | Specification                                    |
+| --------------------------------- | ------------------------------------------------ |
+| **NFR-A1:** Standard compliance   | WCAG 2.1 Level AA for patient-facing interfaces  |
+| **NFR-A2:** Screen reader support | Full compatibility with NVDA, JAWS, VoiceOver    |
+| **NFR-A3:** Keyboard navigation   | All functions accessible via keyboard            |
+| **NFR-A4:** Color contrast        | Minimum 4.5:1 ratio for normal text              |
+| **NFR-A5:** Text scaling          | Support 200% zoom without horizontal scrolling   |
+| **NFR-A6:** Focus indicators      | Visible focus state for all interactive elements |
+| **NFR-A7:** Form labels           | All form inputs have associated labels           |
+| **NFR-A8:** Error identification  | Errors clearly identified with suggestions       |
 
 **Rationale:** Patients include elderly and those with disabilities. Healthcare accessibility is both ethical and increasingly regulated.
 
 ### Integration
 
-| Requirement | Specification |
-|-------------|---------------|
-| **NFR-I1:** FHIR compliance | Full FHIR R4 compatibility via Oystehr |
-| **NFR-I2:** API versioning | Semantic versioning with 6-month deprecation notice |
-| **NFR-I3:** API rate limiting | Rate limits per tenant to prevent abuse |
-| **NFR-I4:** Webhook reliability | At-least-once delivery with idempotency support |
-| **NFR-I5:** External service timeout | 30-second maximum for external API calls |
-| **NFR-I6:** Retry logic | Exponential backoff for transient failures |
-| **NFR-I7:** Data format standards | JSON for APIs, HL7 FHIR for clinical data |
+| Requirement                          | Specification                                       |
+| ------------------------------------ | --------------------------------------------------- |
+| **NFR-I1:** FHIR compliance          | Full FHIR R4 compatibility via Oystehr              |
+| **NFR-I2:** API versioning           | Semantic versioning with 6-month deprecation notice |
+| **NFR-I3:** API rate limiting        | Rate limits per tenant to prevent abuse             |
+| **NFR-I4:** Webhook reliability      | At-least-once delivery with idempotency support     |
+| **NFR-I5:** External service timeout | 30-second maximum for external API calls            |
+| **NFR-I6:** Retry logic              | Exponential backoff for transient failures          |
+| **NFR-I7:** Data format standards    | JSON for APIs, HL7 FHIR for clinical data           |
 
 ### Maintainability
 
-| Requirement | Specification |
-|-------------|---------------|
-| **NFR-M1:** Code coverage | Minimum 70% unit test coverage for new code |
-| **NFR-M2:** Documentation | API documentation auto-generated and current |
-| **NFR-M3:** Logging standards | Structured logging with correlation IDs |
-| **NFR-M4:** Error reporting | Centralized error tracking with alerting |
-| **NFR-M5:** Deployment | Zero-downtime deployments |
-| **NFR-M6:** Configuration | Environment-based configuration, no hardcoded secrets |
-| **NFR-M7:** Dependency management | Automated security scanning for dependencies |
+| Requirement                       | Specification                                         |
+| --------------------------------- | ----------------------------------------------------- |
+| **NFR-M1:** Code coverage         | Minimum 70% unit test coverage for new code           |
+| **NFR-M2:** Documentation         | API documentation auto-generated and current          |
+| **NFR-M3:** Logging standards     | Structured logging with correlation IDs               |
+| **NFR-M4:** Error reporting       | Centralized error tracking with alerting              |
+| **NFR-M5:** Deployment            | Zero-downtime deployments                             |
+| **NFR-M6:** Configuration         | Environment-based configuration, no hardcoded secrets |
+| **NFR-M7:** Dependency management | Automated security scanning for dependencies          |
 
 ### AI-Specific Quality
 
-| Requirement | Specification |
-|-------------|---------------|
-| **NFR-AI1:** Response consistency | Same input produces semantically consistent output |
-| **NFR-AI2:** Transparency | All AI outputs include basis and limitations |
+| Requirement                       | Specification                                        |
+| --------------------------------- | ---------------------------------------------------- |
+| **NFR-AI1:** Response consistency | Same input produces semantically consistent output   |
+| **NFR-AI2:** Transparency         | All AI outputs include basis and limitations         |
 | **NFR-AI3:** Uncertainty flagging | AI confidence below threshold triggers explicit flag |
-| **NFR-AI4:** Fallback behavior | AI service failure falls back to manual workflow |
-| **NFR-AI5:** Model versioning | AI model versions tracked in audit trail |
-| **NFR-AI6:** Prompt versioning | Prompt templates versioned and auditable |
-| **NFR-AI7:** Output validation | AI outputs validated against clinical safety rules |
-
+| **NFR-AI4:** Fallback behavior    | AI service failure falls back to manual workflow     |
+| **NFR-AI5:** Model versioning     | AI model versions tracked in audit trail             |
+| **NFR-AI6:** Prompt versioning    | Prompt templates versioned and auditable             |
+| **NFR-AI7:** Output validation    | AI outputs validated against clinical safety rules   |
