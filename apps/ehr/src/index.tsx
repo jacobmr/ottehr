@@ -10,7 +10,10 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 // trying to speed up stripe loading by declaring this here so it's ready to go by the time it's needed
-export const stripePromise = loadStripe(import.meta.env.VITE_APP_STRIPE_KEY);
+// Only load Stripe if a key is configured
+export const stripePromise = import.meta.env.VITE_APP_STRIPE_KEY
+  ? loadStripe(import.meta.env.VITE_APP_STRIPE_KEY)
+  : null;
 
 export const AUTH0_REDIRECT_URI =
   import.meta.env.VITE_APP_OYSTEHR_APPLICATION_REDIRECT_URL_TELEMED &&
