@@ -35,6 +35,12 @@ const queryClient = new QueryClient({
 // Check if we should render standalone AuraDemo (bypasses auth/API hooks)
 const isAuraDemoRoute = window.location.pathname === '/aura-demo';
 
+// Debug logging for deployment troubleshooting
+console.log('[Aura] pathname:', window.location.pathname);
+console.log('[Aura] isAuraDemoRoute:', isAuraDemoRoute);
+console.log('[Aura] AURA_ENABLED:', FEATURE_FLAGS.AURA_ENABLED);
+console.log('[Aura] will render standalone:', isAuraDemoRoute && FEATURE_FLAGS.AURA_ENABLED);
+
 if (isAuraDemoRoute && FEATURE_FLAGS.AURA_ENABLED) {
   // Render standalone AuraDemo without auth or API dependencies
   const demoTheme = createTheme({
